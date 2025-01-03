@@ -10,7 +10,17 @@ import {
 export const Hero = () => {
   return (
     <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 hero-gradient" />
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80")',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-dark/95 via-dark/80 to-dark/95" />
+        <div className="absolute inset-0 hero-gradient" />
+      </div>
+
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up">
           <h1 className="text-5xl md:text-7xl font-bold">
