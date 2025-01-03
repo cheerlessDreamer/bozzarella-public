@@ -28,20 +28,22 @@ export const Hero = () => {
             >
               Join Beta Program
             </Button>
-            <TooltipProvider>
+            <TooltipProvider delayDuration={100}>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Button 
-                    size="lg" 
-                    variant="outline" 
-                    className="gap-2" 
-                    disabled
-                  >
-                    <Phone className="w-4 h-4" />
-                    Request Demo
-                  </Button>
+                  <span>
+                    <Button 
+                      size="lg" 
+                      variant="outline" 
+                      className="gap-2 w-full" 
+                      disabled
+                    >
+                      <Phone className="w-4 h-4" />
+                      Request Demo
+                    </Button>
+                  </span>
                 </TooltipTrigger>
-                <TooltipContent>
+                <TooltipContent side="top" className="z-50">
                   <p>Coming soon!</p>
                 </TooltipContent>
               </Tooltip>
