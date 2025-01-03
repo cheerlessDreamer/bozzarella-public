@@ -8,7 +8,7 @@ export const BetaBanner = () => {
           <MegaphoneIcon className="w-4 h-4" />
           <p>
             <span className="font-medium">We're looking for beta testers!</span>{" "}
-            Join our program and get lifetime free access.
+            Join our program and get free access.
           </p>
         </div>
       </div>
