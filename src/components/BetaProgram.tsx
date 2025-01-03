@@ -11,7 +11,7 @@ export const BetaProgram = () => {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">Join Our Beta Program</h2>
           <p className="text-gray-400 mb-8">
-            Be among the first to experience Bozzarella and help shape the future of restaurant order management. Beta users get lifetime free access.
+            Be among the first to experience Bozzarella and help shape the future of restaurant order management. Beta users get free access.
           </p>
           <Button 
             onClick={handleJoinBeta}
