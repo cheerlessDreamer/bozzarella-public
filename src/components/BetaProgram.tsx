@@ -1,15 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { useState } from "react";
-import { toast } from "sonner";
 
 export const BetaProgram = () => {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast.success("Thanks for your interest! We'll be in touch soon.");
-    setEmail("");
+  const handleJoinBeta = () => {
+    window.open("https://form.typeform.com/to/placeholder", "_blank");
   };
 
   return (
@@ -20,19 +13,12 @@ export const BetaProgram = () => {
           <p className="text-gray-400 mb-8">
             Be among the first to experience Bozzarella and help shape the future of restaurant order management. Beta users get lifetime free access.
           </p>
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <Input
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="bg-dark-lighter"
-              required
-            />
-            <Button type="submit" className="bg-primary hover:bg-primary-hover text-white">
-              Get Early Access
-            </Button>
-          </form>
+          <Button 
+            onClick={handleJoinBeta}
+            className="bg-primary hover:bg-primary-hover text-white"
+          >
+            Get Early Access
+          </Button>
         </div>
       </div>
     </section>

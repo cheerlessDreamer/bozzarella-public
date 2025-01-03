@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export const Hero = () => {
   return (
@@ -15,13 +21,31 @@ export const Hero = () => {
             Bozzarella is an AI assistant that takes phone orders for your restaurant, so you can focus on what matters most.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary-hover text-white">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary-hover text-white"
+              onClick={() => window.open("https://form.typeform.com/to/placeholder", "_blank")}
+            >
               Join Beta Program
             </Button>
-            <Button size="lg" variant="outline" className="gap-2">
-              <Phone className="w-4 h-4" />
-              Request Demo
-            </Button>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Button 
+                    size="lg" 
+                    variant="outline" 
+                    className="gap-2" 
+                    disabled
+                  >
+                    <Phone className="w-4 h-4" />
+                    Request Demo
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Coming soon!</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </div>
         </div>
       </div>
