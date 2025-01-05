@@ -1,4 +1,4 @@
-import { Bot, CreditCard, FileText, MessageSquare, Phone, PlusCircle, Receipt, Repeat, Globe2, Shield } from "lucide-react";
+import { Bot, CreditCard, FileText, MessageSquare, Phone, PlusCircle, Receipt, Repeat, Globe2, Shield, Clock, Calendar, Truck, CreditCard as Payment, Settings } from "lucide-react";
 
 const features = [
   {
@@ -46,6 +46,31 @@ const features = [
     title: "Privacy First",
     description: "Choose whether to store order history or keep things private - you're in control",
   },
+  {
+    icon: <Truck className="w-6 h-6" />,
+    title: "Delivery Control",
+    description: "Toggle delivery service on/off and set delivery zones and minimum orders",
+  },
+  {
+    icon: <Payment className="w-6 h-6" />,
+    title: "Payment Settings",
+    description: "Configure pre-payment requirements and accepted payment methods",
+  },
+  {
+    icon: <Clock className="w-6 h-6" />,
+    title: "Operating Hours",
+    description: "Set regular business hours and special holiday schedules",
+  },
+  {
+    icon: <Calendar className="w-6 h-6" />,
+    title: "Availability Management",
+    description: "Easily update status for unexpected closures, holidays, or reduced capacity",
+  },
+  {
+    icon: <Settings className="w-6 h-6" />,
+    title: "Kitchen Capacity",
+    description: "Set order limits based on kitchen capacity and current wait times",
+  }
 ];
 
 export const Features = () => {
