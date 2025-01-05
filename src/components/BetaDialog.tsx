@@ -11,7 +11,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 export const BetaDialog = ({ trigger }: { trigger: React.ReactNode }) => {
   const handleJoinBeta = () => {
-    window.open("https://form.typeform.com/to/placeholder", "_blank");
+    window.open("https://s1bd9ibzge3.typeform.com/to/z4hzAa2Z", "_blank");
   };
 
   return (
