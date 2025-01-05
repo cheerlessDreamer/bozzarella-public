@@ -133,6 +133,10 @@ export const sv: TranslationType = {
     subtitle: "Allt du behöver veta om Bozzarella och hur det kan hjälpa din restaurang",
     questions: [
       {
+        question: "Hur ser era prisalternativ ut?",
+        answer: "Vi har ännu inte fastställt vår prisstruktur, men vi kommer att erbjuda flexibla alternativ som fungerar för restauranger av alla storlekar. Detta kommer att inkludera både fasta månadsplaner och betalning per beställning, så att du kan välja det som passar din verksamhet bäst. Vi förstår att varje restaurang har unika behov och volymer, och vår prissättning kommer att återspegla denna flexibilitet."
+      },
+      {
         question: "Passar AI verkligen för min lilla pizzeria på landsbygden?",
         answer: "Absolut! Bozzarella är utformat för pizzerior i alla storlekar, inklusive små familjedrivna verksamheter. Faktum är att mindre restauranger ofta drar störst nytta av AI-telefonbeställningar eftersom det frigör din begränsade personal att fokusera på det viktiga - att göra fantastisk pizza. Systemet är enkelt att installera, kostnadseffektivt (du betalar endast per beställning) och hjälper dig att ge konsekvent service även under rusningstider eller när ni är underbemannade."
       },
