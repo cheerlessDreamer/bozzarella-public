@@ -5,85 +5,33 @@ import { Button } from "./ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const features = [
-  {
-    icon: <FileText className="w-6 h-6" />,
-    title: "Menu Integration",
-    description: "Automatic menu parsing from Foodora, Wolt, or PDF formats",
-  },
-  {
-    icon: <Phone className="w-6 h-6" />,
-    title: "24/7 Availability",
-    description: "Never miss a phone order, day or night",
-  },
-  {
-    icon: <CreditCard className="w-6 h-6" />,
-    title: "Swish Payments",
-    description: "Seamless payment handling via Swish or on delivery",
-  },
-  {
-    icon: <MessageSquare className="w-6 h-6" />,
-    title: "Instant Notifications",
-    description: "Orders sent via SMS, email, or direct API integration",
-  },
-  {
-    icon: <PlusCircle className="w-6 h-6" />,
-    title: "Customization",
-    description: "Handle modifications and special requests with ease",
-  },
-  {
-    icon: <Repeat className="w-6 h-6" />,
-    title: "Order History",
-    description: "Remember returning customers and their preferences",
-  },
-  {
-    icon: <Globe2 className="w-6 h-6" />,
-    title: "Multilingual Support",
-    description: "Take orders in any language, making your pizzeria accessible to everyone",
-  },
-  {
-    icon: <Phone className="w-6 h-6" />,
-    title: "Human Backup",
-    description: "Seamlessly transfer calls to your staff if needed - we know sometimes you need that human touch",
-  },
-  {
-    icon: <Shield className="w-6 h-6" />,
-    title: "Privacy First",
-    description: "Choose whether to store order history or keep things private - you're in control",
-  },
-  {
-    icon: <Truck className="w-6 h-6" />,
-    title: "Delivery Control",
-    description: "Toggle delivery service on/off and set delivery zones and minimum orders",
-  },
-  {
-    icon: <Payment className="w-6 h-6" />,
-    title: "Payment Settings",
-    description: "Configure pre-payment requirements and accepted payment methods",
-  },
-  {
-    icon: <Clock className="w-6 h-6" />,
-    title: "Operating Hours",
-    description: "Set regular business hours and special holiday schedules",
-  },
-  {
-    icon: <Calendar className="w-6 h-6" />,
-    title: "Availability Management",
-    description: "Easily update status for unexpected closures, holidays, or reduced capacity",
-  },
-  {
-    icon: <Settings className="w-6 h-6" />,
-    title: "Kitchen Capacity",
-    description: "Set order limits based on kitchen capacity and current wait times",
-  }
-];
-
-const mainFeatures = features.slice(0, 6);
-const additionalFeatures = features.slice(6);
+const getFeatureIcon = (key: string) => {
+  const icons = {
+    menuIntegration: <FileText className="w-6 h-6" />,
+    availability: <Phone className="w-6 h-6" />,
+    payments: <CreditCard className="w-6 h-6" />,
+    notifications: <MessageSquare className="w-6 h-6" />,
+    customization: <PlusCircle className="w-6 h-6" />,
+    orderHistory: <Repeat className="w-6 h-6" />,
+    multilingual: <Globe2 className="w-6 h-6" />,
+    humanBackup: <Phone className="w-6 h-6" />,
+    privacy: <Shield className="w-6 h-6" />,
+    delivery: <Truck className="w-6 h-6" />,
+    paymentSettings: <Payment className="w-6 h-6" />,
+    operatingHours: <Clock className="w-6 h-6" />,
+    availability: <Calendar className="w-6 h-6" />,
+    kitchenCapacity: <Settings className="w-6 h-6" />
+  };
+  return icons[key as keyof typeof icons] || <FileText className="w-6 h-6" />;
+};
 
 export const Features = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useLanguage();
+
+  const allFeatures = t<Array<{ key: string; title: string; description: string }>>('features.items');
+  const mainFeatures = allFeatures.slice(0, 6);
+  const additionalFeatures = allFeatures.slice(6);
 
   return (
     <section className="py-20 bg-dark-lighter">
@@ -101,7 +49,7 @@ export const Features = () => {
               key={index}
               className="p-6 rounded-lg bg-dark border border-gray-800 hover:border-primary/50 transition-colors"
             >
-              <div className="text-primary mb-4">{feature.icon}</div>
+              <div className="text-primary mb-4">{getFeatureIcon(feature.key)}</div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-gray-400">{feature.description}</p>
             </div>
@@ -135,7 +83,7 @@ export const Features = () => {
                   key={index}
                   className="p-6 rounded-lg bg-dark border border-gray-800 hover:border-primary/50 transition-colors"
                 >
-                  <div className="text-primary mb-4">{feature.icon}</div>
+                  <div className="text-primary mb-4">{getFeatureIcon(feature.key)}</div>
                   <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                   <p className="text-gray-400">{feature.description}</p>
                 </div>

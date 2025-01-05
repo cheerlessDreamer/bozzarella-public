@@ -19,6 +19,11 @@ type TranslationType = {
     subtitle: string;
     showMore: string;
     showLess: string;
+    items: Array<{
+      key: string;
+      title: string;
+      description: string;
+    }>;
   };
   pricing: {
     title: string;
@@ -82,7 +87,79 @@ export const translations: Record<'en' | 'sv', TranslationType> = {
       title: "Powerful Features",
       subtitle: "Everything you need to automate your restaurant's phone orders",
       showMore: "And much more",
-      showLess: "Show less"
+      showLess: "Show less",
+      items: [
+        {
+          key: "menuIntegration",
+          title: "Menu Integration",
+          description: "Automatic menu parsing from Foodora, Wolt, or PDF formats"
+        },
+        {
+          key: "availability",
+          title: "24/7 Availability",
+          description: "Never miss a phone order, day or night"
+        },
+        {
+          key: "payments",
+          title: "Swish Payments",
+          description: "Seamless payment handling via Swish or on delivery"
+        },
+        {
+          key: "notifications",
+          title: "Instant Notifications",
+          description: "Orders sent via SMS, email, or direct API integration"
+        },
+        {
+          key: "customization",
+          title: "Customization",
+          description: "Handle modifications and special requests with ease"
+        },
+        {
+          key: "orderHistory",
+          title: "Order History",
+          description: "Remember returning customers and their preferences"
+        },
+        {
+          key: "multilingual",
+          title: "Multilingual Support",
+          description: "Take orders in any language, making your pizzeria accessible to everyone"
+        },
+        {
+          key: "humanBackup",
+          title: "Human Backup",
+          description: "Seamlessly transfer calls to your staff if needed - we know sometimes you need that human touch"
+        },
+        {
+          key: "privacy",
+          title: "Privacy First",
+          description: "Choose whether to store order history or keep things private - you're in control"
+        },
+        {
+          key: "delivery",
+          title: "Delivery Control",
+          description: "Toggle delivery service on/off and set delivery zones and minimum orders"
+        },
+        {
+          key: "paymentSettings",
+          title: "Payment Settings",
+          description: "Configure pre-payment requirements and accepted payment methods"
+        },
+        {
+          key: "operatingHours",
+          title: "Operating Hours",
+          description: "Set regular business hours and special holiday schedules"
+        },
+        {
+          key: "availabilityManagement",
+          title: "Availability Management",
+          description: "Easily update status for unexpected closures, holidays, or reduced capacity"
+        },
+        {
+          key: "kitchenCapacity",
+          title: "Kitchen Capacity",
+          description: "Set order limits based on kitchen capacity and current wait times"
+        }
+      ]
     },
     pricing: {
       title: "Fair Pricing for Every Restaurant",
@@ -178,7 +255,79 @@ export const translations: Record<'en' | 'sv', TranslationType> = {
       title: "Kraftfulla Funktioner",
       subtitle: "Allt du behöver för att automatisera restaurangens telefonbeställningar",
       showMore: "Och mycket mer",
-      showLess: "Visa mindre"
+      showLess: "Visa mindre",
+      items: [
+        {
+          key: "menuIntegration",
+          title: "Menyintegration",
+          description: "Automatisk menytolkning från Foodora, Wolt eller PDF-format"
+        },
+        {
+          key: "availability",
+          title: "Tillgänglig 24/7",
+          description: "Missa aldrig en telefonbeställning, dag som natt"
+        },
+        {
+          key: "payments",
+          title: "Swish Betalningar",
+          description: "Smidig betalningshantering via Swish eller vid leverans"
+        },
+        {
+          key: "notifications",
+          title: "Direkta Notifieringar",
+          description: "Beställningar skickas via SMS, e-post eller direkt API-integration"
+        },
+        {
+          key: "customization",
+          title: "Anpassning",
+          description: "Hantera ändringar och specialönskemål med lätthet"
+        },
+        {
+          key: "orderHistory",
+          title: "Orderhistorik",
+          description: "Kom ihåg återkommande kunder och deras preferenser"
+        },
+        {
+          key: "multilingual",
+          title: "Flerspråkigt Stöd",
+          description: "Ta emot beställningar på alla språk, gör din pizzeria tillgänglig för alla"
+        },
+        {
+          key: "humanBackup",
+          title: "Mänsklig Backup",
+          description: "Överför sömlöst samtal till din personal vid behov - vi vet att ibland behövs en mänsklig touch"
+        },
+        {
+          key: "privacy",
+          title: "Sekretess Först",
+          description: "Välj om du vill lagra orderhistorik eller hålla det privat - du har kontrollen"
+        },
+        {
+          key: "delivery",
+          title: "Leveranskontroll",
+          description: "Aktivera/inaktivera leveransservice och ställ in leveranszoner och minimibeställningar"
+        },
+        {
+          key: "paymentSettings",
+          title: "Betalningsinställningar",
+          description: "Konfigurera krav på förbetalning och accepterade betalningsmetoder"
+        },
+        {
+          key: "operatingHours",
+          title: "Öppettider",
+          description: "Ställ in ordinarie öppettider och särskilda helgscheman"
+        },
+        {
+          key: "availabilityManagement",
+          title: "Tillgänglighetshantering",
+          description: "Uppdatera enkelt status för oväntade stängningar, helgdagar eller reducerad kapacitet"
+        },
+        {
+          key: "kitchenCapacity",
+          title: "Kökskapacitet",
+          description: "Ställ in ordergränser baserat på kökskapacitet och aktuella väntetider"
+        }
+      ]
     },
     pricing: {
       title: "Rättvist Pris för Varje Restaurang",
@@ -254,7 +403,4 @@ export const translations: Record<'en' | 'sv', TranslationType> = {
       suffix: "och få gratis tillgång."
     }
   }
-} as const;
-
-export type Language = keyof typeof translations;
-export type TranslationKeys = typeof translations.en;
+};
