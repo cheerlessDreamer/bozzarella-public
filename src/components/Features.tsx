@@ -1,4 +1,4 @@
-import { Bot, CreditCard, FileText, MessageSquare, Phone, PlusCircle, Receipt, Repeat } from "lucide-react";
+import { Bot, CreditCard, FileText, MessageSquare, Phone, PlusCircle, Receipt, Repeat, Globe2, Shield } from "lucide-react";
 
 const features = [
   {
@@ -30,6 +30,21 @@ const features = [
     icon: <Repeat className="w-6 h-6" />,
     title: "Order History",
     description: "Remember returning customers and their preferences",
+  },
+  {
+    icon: <Globe2 className="w-6 h-6" />,
+    title: "Multilingual Support",
+    description: "Take orders in any language, making your pizzeria accessible to everyone",
+  },
+  {
+    icon: <Phone className="w-6 h-6" />,
+    title: "Human Backup",
+    description: "Seamlessly transfer calls to your staff if needed - we know sometimes you need that human touch",
+  },
+  {
+    icon: <Shield className="w-6 h-6" />,
+    title: "Privacy First",
+    description: "Choose whether to store order history or keep things private - you're in control",
   },
 ];
 
