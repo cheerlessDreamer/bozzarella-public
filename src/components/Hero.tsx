@@ -15,9 +15,13 @@ export const Hero = () => {
   return (
     <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-bottom"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80")',
+          backgroundImage: 'url("/hero.png")',
+          maxWidth: '1920px',
+          margin: '0 auto',
+          left: '0',
+          right: '0'
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-dark/95 via-dark/80 to-dark/95" />
