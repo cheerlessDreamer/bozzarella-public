@@ -27,7 +27,7 @@ export const Hero = () => {
             <span className="gradient-text block mt-2">Always On Call</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto">
-            Bozzarella is an AI assistant that takes phone orders for your restaurant, so you can focus on what matters most.
+            Bozzarella is your 24/7 AI phone buddy, taking perfect pizza orders while you focus on crafting amazing food!
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-8">
             <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800 transition-all duration-300 hover:bg-dark-lighter/70 hover:border-gray-700 hover:shadow-lg">
