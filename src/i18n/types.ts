@@ -13,6 +13,7 @@ export type TranslationType = {
       staffFreedom: string;
       staffFreedomDesc: string;
     };
+    hoverText: string;
     betaButton: string;
     watchDemo: string;
   };

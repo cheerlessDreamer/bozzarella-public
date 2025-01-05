@@ -13,6 +13,7 @@ export const en: TranslationType = {
       staffFreedom: "Cost Reduction",
       staffFreedomDesc: "Save on staffing costs and reduce order errors. No more miscommunications or lost orders - just precise, consistent service every time."
     },
+    hoverText: "Hover over each feature to learn more about how Bozzarella can help your restaurant thrive.",
     betaButton: "Join Beta Program",
     watchDemo: "Watch Demo"
   },

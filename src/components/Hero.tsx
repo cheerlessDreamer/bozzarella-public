@@ -4,6 +4,8 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { BetaDialog } from "./BetaDialog";
 import { useState } from "react";
+import { FeatureCard } from "./hero/FeatureCard";
+import { FeatureDescription } from "./hero/FeatureDescription";
 
 export const Hero = () => {
   const { t } = useLanguage();
@@ -61,33 +63,21 @@ export const Hero = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {features.map((feature, index) => (
-              <div
+              <FeatureCard
                 key={index}
-                className={`bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800 transition-all duration-300 cursor-pointer
-                  ${hoveredFeature === index ? 'border-primary bg-dark-lighter/70' : 'hover:bg-dark-lighter/70 hover:border-gray-700'}
-                `}
-                onMouseEnter={() => setHoveredFeature(index)}
-                onMouseLeave={() => setHoveredFeature(null)}
-              >
-                <h3 className={`text-lg font-semibold mb-2 transition-colors duration-300 
-                  ${hoveredFeature === index ? 'text-primary' : 'text-white'}`}>
-                  {feature.title}
-                </h3>
-              </div>
+                index={index}
+                title={feature.title}
+                description={feature.description}
+                isHovered={hoveredFeature === index}
+                onHover={setHoveredFeature}
+              />
             ))}
           </div>
 
-          <div className="h-24 transition-all duration-300">
-            {hoveredFeature !== null ? (
-              <p className="text-gray-400 animate-fade-up">
-                {features[hoveredFeature].description}
-              </p>
-            ) : (
-              <p className="text-gray-400 animate-fade-up">
-                Hover over each feature to learn more about how Bozzarella can help your restaurant thrive.
-              </p>
-            )}
-          </div>
+          <FeatureDescription
+            hoveredFeature={hoveredFeature}
+            features={features}
+          />
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <BetaDialog 
