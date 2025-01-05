@@ -105,11 +105,9 @@ export const Hero = () => {
             <div className="aspect-video w-full">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1&rel=0&showinfo=0&modestbranding=1"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                loading="lazy"
-                title="Demo Video"
               />
             </div>
           </div>
