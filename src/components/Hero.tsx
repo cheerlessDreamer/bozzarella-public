@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
+import { Video } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -70,7 +70,7 @@ export const Hero = () => {
                   variant="outline" 
                   className="gap-2"
                 >
-                  <Phone className="w-4 h-4" />
+                  <Video className="w-4 h-4" />
                   Watch Demo
                 </Button>
               </DialogTrigger>
