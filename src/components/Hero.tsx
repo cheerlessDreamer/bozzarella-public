@@ -4,23 +4,23 @@ import { useState } from "react";
 
 export const Hero = () => {
   const { t } = useLanguage();
-  const [activeFeature, setActiveFeature] = useState<keyof typeof t.hero.features>("orderTaking");
+  const [activeFeature, setActiveFeature] = useState<"orderTaking" | "zeroMistakes" | "staffFreedom">("orderTaking");
 
   const features = [
     {
       key: "orderTaking" as const,
-      title: t.hero.features.orderTaking,
-      description: t.hero.features.orderTakingDesc
+      title: t("hero.features.orderTaking"),
+      description: t("hero.features.orderTakingDesc")
     },
     {
       key: "zeroMistakes" as const,
-      title: t.hero.features.zeroMistakes,
-      description: t.hero.features.zeroMistakesDesc
+      title: t("hero.features.zeroMistakes"),
+      description: t("hero.features.zeroMistakesDesc")
     },
     {
       key: "staffFreedom" as const,
-      title: t.hero.features.staffFreedom,
-      description: t.hero.features.staffFreedomDesc
+      title: t("hero.features.staffFreedom"),
+      description: t("hero.features.staffFreedomDesc")
     }
   ];
 
@@ -30,11 +30,11 @@ export const Hero = () => {
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            {t.hero.title} <br />
-            <span className="gradient-text">{t.hero.subtitle}</span>
+            {t("hero.title")} <br />
+            <span className="gradient-text">{t("hero.subtitle")}</span>
           </h1>
           <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
-            {t.hero.description}
+            {t("hero.description")}
           </p>
 
           <div className="grid grid-cols-3 gap-8 mb-6">
@@ -59,10 +59,10 @@ export const Hero = () => {
 
           <div className="flex items-center justify-center gap-4">
             <Button variant="default" className="bg-primary hover:bg-primary-hover text-white">
-              {t.hero.betaButton}
+              {t("hero.betaButton")}
             </Button>
             <Button variant="outline">
-              {t.hero.watchDemo}
+              {t("hero.watchDemo")}
             </Button>
           </div>
         </div>
