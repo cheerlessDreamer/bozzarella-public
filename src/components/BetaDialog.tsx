@@ -30,16 +30,17 @@ export const BetaDialog = ({ trigger }: { trigger: React.ReactNode }) => {
               <li>This is an experimental product in early development</li>
               <li>Features, pricing, and availability may change significantly</li>
               <li>The product may be discontinued if we don't find product-market fit</li>
+              <li>Beta access is not guaranteed and will be granted based on compatibility with our current development phase</li>
               <li>Beta testers get priority access and special pricing if/when we launch</li>
             </ul>
             <p className="pt-2">
-              If you understand these conditions and would like to help shape the future of restaurant phone orders, please proceed to the signup form.
+              If you understand these conditions and would like to help shape the future of restaurant phone orders, please proceed to our brief questionnaire.
             </p>
           </DialogDescription>
         </DialogHeader>
         <div className="flex justify-end mt-6">
           <Button onClick={handleJoinBeta}>
-            Proceed to Beta Signup
+            Answer a Few Questions
           </Button>
         </div>
       </DialogContent>
