@@ -76,10 +76,9 @@ export const Hero = () => {
               </DialogTrigger>
               <DialogContent className="sm:max-w-[800px] p-0 bg-black">
                 <div className="aspect-video w-full">
-                  {/* Replace the src with your actual video URL once you have it */}
                   <iframe
                     className="w-full h-full"
-                    src="about:blank" // Replace with your YouTube/Vimeo embed URL
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
