@@ -1,12 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { BetaDialog } from "./BetaDialog";
 
 export const BetaProgram = () => {
   const { t } = useLanguage();
-
-  const handleJoinBeta = () => {
-    window.open("https://form.typeform.com/to/placeholder", "_blank");
-  };
 
   return (
     <section className="py-20">
@@ -16,12 +13,13 @@ export const BetaProgram = () => {
           <p className="text-gray-400 mb-8">
             {t('betaProgram.subtitle')}
           </p>
-          <Button 
-            onClick={handleJoinBeta}
-            className="bg-primary hover:bg-primary-hover text-white"
-          >
-            {t('betaProgram.button')}
-          </Button>
+          <BetaDialog 
+            trigger={
+              <Button className="bg-primary hover:bg-primary-hover text-white">
+                {t('betaProgram.button')}
+              </Button>
+            }
+          />
         </div>
       </div>
     </section>

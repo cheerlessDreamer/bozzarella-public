@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Video } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { BetaDialog } from "./BetaDialog";
 
 export const Hero = () => {
   const { t } = useLanguage();
@@ -57,13 +58,16 @@ export const Hero = () => {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary-hover text-white"
-              onClick={() => window.open("https://form.typeform.com/to/placeholder", "_blank")}
-            >
-              {t('hero.betaButton')}
-            </Button>
+            <BetaDialog 
+              trigger={
+                <Button 
+                  size="lg" 
+                  className="bg-primary hover:bg-primary-hover text-white"
+                >
+                  {t('hero.betaButton')}
+                </Button>
+              }
+            />
             <Button 
               size="lg" 
               variant="outline" 
