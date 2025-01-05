@@ -3,6 +3,7 @@ import { Bot, CreditCard, FileText, MessageSquare, Phone, PlusCircle, Receipt, R
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const features = [
   {
@@ -82,14 +83,15 @@ const additionalFeatures = features.slice(6);
 
 export const Features = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <section className="py-20 bg-dark-lighter">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Powerful Features</h2>
+          <h2 className="text-4xl font-bold mb-4">{t('features.title')}</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Everything you need to automate your restaurant's phone orders
+            {t('features.subtitle')}
           </p>
         </div>
 
@@ -117,7 +119,7 @@ export const Features = () => {
                 variant="ghost"
                 className="flex items-center gap-2 text-primary hover:text-primary/90"
               >
-                {isOpen ? "Show less" : "And much more"}
+                {isOpen ? t('features.showLess') : t('features.showMore')}
                 <ChevronDown className={cn(
                   "h-4 w-4 transition-transform duration-200",
                   isOpen && "rotate-180"
