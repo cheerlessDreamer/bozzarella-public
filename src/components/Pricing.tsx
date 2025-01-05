@@ -18,7 +18,7 @@ export const Pricing = () => {
             <h3 className="text-xl font-semibold mb-4">{t('pricing.small.title')}</h3>
             <p className="text-gray-400 mb-6">{t('pricing.small.description')}</p>
             <ul className="space-y-3 mb-6">
-              {t('pricing.small.features').map((feature, index) => (
+              {t<string[]>('pricing.small.features').map((feature, index) => (
                 <li key={index} className="flex items-center gap-2">
                   <Check className="w-5 h-5 text-primary" />
                   <span>{feature}</span>
@@ -35,7 +35,7 @@ export const Pricing = () => {
             <h3 className="text-xl font-semibold mb-4">{t('pricing.medium.title')}</h3>
             <p className="text-gray-400 mb-6">{t('pricing.medium.description')}</p>
             <ul className="space-y-3 mb-6">
-              {t('pricing.medium.features').map((feature, index) => (
+              {t<string[]>('pricing.medium.features').map((feature, index) => (
                 <li key={index} className="flex items-center gap-2">
                   <Check className="w-5 h-5 text-primary" />
                   <span>{feature}</span>
@@ -49,7 +49,7 @@ export const Pricing = () => {
             <h3 className="text-xl font-semibold mb-4">{t('pricing.large.title')}</h3>
             <p className="text-gray-400 mb-6">{t('pricing.large.description')}</p>
             <ul className="space-y-3 mb-6">
-              {t('pricing.large.features').map((feature, index) => (
+              {t<string[]>('pricing.large.features').map((feature, index) => (
                 <li key={index} className="flex items-center gap-2">
                   <Check className="w-5 h-5 text-primary" />
                   <span>{feature}</span>

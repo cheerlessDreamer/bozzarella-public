@@ -4,7 +4,7 @@ import { translations, Language, TranslationKeys } from '../i18n/translations';
 type LanguageContextType = {
   language: Language;
   setLanguage: (lang: Language) => void;
-  t: (path: string) => string;
+  t: <T = string>(path: string) => T;
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -12,8 +12,8 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
   const [language, setLanguage] = useState<Language>('en');
 
-  const t = (path: string): string => {
-    return path.split('.').reduce((obj: any, key) => obj?.[key], translations[language]) || path;
+  const t = <T = string>(path: string): T => {
+    return path.split('.').reduce((obj: any, key) => obj?.[key], translations[language]) as T;
   };
 
   return (

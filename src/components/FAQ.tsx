@@ -6,6 +6,11 @@ import {
 } from "@/components/ui/accordion";
 import { useLanguage } from "@/contexts/LanguageContext";
 
+type FAQItem = {
+  question: string;
+  answer: string;
+};
+
 export const FAQ = () => {
   const { t } = useLanguage();
 
@@ -20,7 +25,7 @@ export const FAQ = () => {
         </div>
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
-            {t('faq.questions').map((faq, index) => (
+            {t<FAQItem[]>('faq.questions').map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
