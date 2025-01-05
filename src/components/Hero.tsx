@@ -31,19 +31,19 @@ export const Hero = () => {
             Bozzarella is an AI assistant that takes phone orders for your restaurant, so you can focus on what matters most.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-8">
-            <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800">
+            <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800 transition-all duration-300 hover:bg-dark-lighter/70 hover:border-gray-700 hover:transform hover:-translate-y-1 hover:shadow-lg">
               <h3 className="text-lg font-semibold mb-2">24/7 Order Taking</h3>
               <p className="text-gray-400">
                 Never miss a call, even during peak hours or after closing time.
               </p>
             </div>
-            <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800">
+            <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800 transition-all duration-300 hover:bg-dark-lighter/70 hover:border-gray-700 hover:transform hover:-translate-y-1 hover:shadow-lg">
               <h3 className="text-lg font-semibold mb-2">Zero Mistakes</h3>
               <p className="text-gray-400">
                 Every order captured with perfect accuracy, every single time.
               </p>
             </div>
-            <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800">
+            <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800 transition-all duration-300 hover:bg-dark-lighter/70 hover:border-gray-700 hover:transform hover:-translate-y-1 hover:shadow-lg">
               <h3 className="text-lg font-semibold mb-2">Staff Freedom</h3>
               <p className="text-gray-400">
                 Let your team focus on cooking and serving, not answering phones.
