@@ -8,7 +8,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const getFeatureIcon = (key: string) => {
   const icons = {
     menuIntegration: <FileText className="w-6 h-6" />,
-    availability: <Phone className="w-6 h-6" />,
+    phoneAvailability: <Phone className="w-6 h-6" />,
     payments: <CreditCard className="w-6 h-6" />,
     notifications: <MessageSquare className="w-6 h-6" />,
     customization: <PlusCircle className="w-6 h-6" />,
