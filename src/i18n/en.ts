@@ -5,6 +5,14 @@ export const en: TranslationType = {
     title: "Your Restaurant's Voice,",
     subtitle: "Always On Call",
     description: "Bozzarella is your AI phone assistant, designed specifically for rural restaurants to handle orders perfectly while you focus on what matters most.",
+    features: {
+      orderTaking: "24/7 Order Taking",
+      orderTakingDesc: "Never miss a call, even during peak hours or after closing time. Handle multiple orders simultaneously while your staff focuses on making great pizzas.",
+      zeroMistakes: "Rural-First Solution",
+      zeroMistakesDesc: "Perfect for rural pizzerias where delivery apps aren't available. Bring big-city technology to small-town restaurants without the big-city costs.",
+      staffFreedom: "Cost Reduction",
+      staffFreedomDesc: "Save on staffing costs and reduce order errors. No more miscommunications or lost orders - just precise, consistent service every time."
+    },
     betaButton: "Join Beta Program",
     watchDemo: "Watch Demo"
   },
