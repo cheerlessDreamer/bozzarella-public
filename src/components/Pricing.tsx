@@ -13,7 +13,7 @@ export const Pricing = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div className="p-6 rounded-lg bg-dark-lighter border border-gray-800 hover:border-primary/50 transition-colors">
             <h3 className="text-xl font-semibold mb-4">Small Restaurant</h3>
-            <p className="text-gray-400 mb-6">Perfect for family-run restaurants</p>
+            <p className="text-gray-400 mb-6">Perfect for family-run restaurants handling up to 500 phone orders monthly</p>
             <ul className="space-y-3 mb-6">
               <li className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-primary" />
@@ -36,7 +36,7 @@ export const Pricing = () => {
               Most Popular
             </div>
             <h3 className="text-xl font-semibold mb-4">Medium Restaurant</h3>
-            <p className="text-gray-400 mb-6">Great for established local favorites</p>
+            <p className="text-gray-400 mb-6">Great for established local favorites with 500-2000 monthly phone orders</p>
             <ul className="space-y-3 mb-6">
               <li className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-primary" />
@@ -56,7 +56,7 @@ export const Pricing = () => {
           
           <div className="p-6 rounded-lg bg-dark-lighter border border-gray-800 hover:border-primary/50 transition-colors">
             <h3 className="text-xl font-semibold mb-4">Large Restaurant</h3>
-            <p className="text-gray-400 mb-6">Ideal for busy establishments</p>
+            <p className="text-gray-400 mb-6">Ideal for busy establishments with 2000+ monthly phone orders</p>
             <ul className="space-y-3 mb-6">
               <li className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-primary" />
