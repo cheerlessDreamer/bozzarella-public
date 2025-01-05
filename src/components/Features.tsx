@@ -4,32 +4,32 @@ const features = [
   {
     icon: <FileText className="w-6 h-6" />,
     title: "Menu Integration",
-    description: "Upload your menu in JSON format, including prices and allergen information",
+    description: "Automatic menu parsing from Foodora, Wolt, or PDF formats",
   },
   {
     icon: <Phone className="w-6 h-6" />,
     title: "24/7 Availability",
-    description: "Handle phone orders around the clock, perfect for rural restaurants",
+    description: "Never miss a phone order, day or night",
   },
   {
-    icon: <Bot className="w-6 h-6" />,
-    title: "Smart Voice AI",
-    description: "Natural conversations with customers, including order modifications",
+    icon: <CreditCard className="w-6 h-6" />,
+    title: "Swish Payments",
+    description: "Seamless payment handling via Swish or on delivery",
   },
   {
     icon: <MessageSquare className="w-6 h-6" />,
-    title: "Seamless Handoff",
-    description: "Transfers complex orders to your staff when needed",
+    title: "Instant Notifications",
+    description: "Orders sent via SMS, email, or direct API integration",
   },
   {
     icon: <PlusCircle className="w-6 h-6" />,
-    title: "Upselling",
-    description: "Smart suggestions for sides and drinks to increase order value",
+    title: "Customization",
+    description: "Handle modifications and special requests with ease",
   },
   {
-    icon: <Receipt className="w-6 h-6" />,
-    title: "Order Management",
-    description: "Track orders and customer preferences for better service",
+    icon: <Repeat className="w-6 h-6" />,
+    title: "Order History",
+    description: "Remember returning customers and their preferences",
   },
 ];
 
@@ -40,7 +40,7 @@ export const Features = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Powerful Features</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Everything your pizza restaurant needs to automate phone orders
+            Everything you need to automate your restaurant's phone orders
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
