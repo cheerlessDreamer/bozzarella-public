@@ -127,14 +127,14 @@ export const sv: TranslationType = {
       },
       contactUs: "Kontakta oss för priser"
     },
-    faq: {
-      title: "Vanliga Frågor",
-      subtitle: "Allt du behöver veta om Bozzarella och hur det kan hjälpa din restaurang",
-      questions: [
-        {
-          question: "Hur hanterar Bozzarella komplexa beställningar?",
-          answer: "Vår AI är tränad för att hantera beställningar med flera rätter, specialönskemål och ändringar. Den kan förtydliga detaljer med kunder och säkerställa korrekthet genom naturlig konversation."
-        },
+  faq: {
+    title: "Vanliga Frågor",
+    subtitle: "Allt du behöver veta om Bozzarella och hur det kan hjälpa din restaurang",
+    questions: [
+      {
+        question: "Passar AI verkligen för min lilla pizzeria på landsbygden?",
+        answer: "Absolut! Bozzarella är utformat för pizzerior i alla storlekar, inklusive små familjedrivna verksamheter. Faktum är att mindre restauranger ofta drar störst nytta av AI-telefonbeställningar eftersom det frigör din begränsade personal att fokusera på det viktiga - att göra fantastisk pizza. Systemet är enkelt att installera, kostnadseffektivt (du betalar endast per beställning) och hjälper dig att ge konsekvent service även under rusningstider eller när ni är underbemannade."
+      },
         {
           question: "Vad händer om AI:n inte förstår en kund?",
           answer: "Om AI:n har svårt att förstå kunden ber den artigt om förtydligande. I sällsynta fall där kommunikationen blir utmanande kan samtalet sömlöst överföras till din personal."
@@ -155,8 +155,8 @@ export const sv: TranslationType = {
           question: "Hur ser det ut med datasäkerhet och integritet?",
           answer: "Vi tar säkerhet på största allvar. All kunddata är krypterad och vi följer branschstandarder för dataskydd. Vi delar eller säljer aldrig kundinformation."
         }
-      ]
-    },
+    ]
+  },
     betaProgram: {
       title: "Gå Med i Vårt Betaprogram",
       subtitle: "Var bland de första att uppleva Bozzarella och hjälp till att forma framtiden för restaurangbeställningar. Betaanvändare får gratis tillgång.",

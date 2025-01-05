@@ -132,6 +132,10 @@ export const en: TranslationType = {
     subtitle: "Everything you need to know about Bozzarella and how it can help your restaurant",
     questions: [
       {
+        question: "Is AI really suitable for my small rural pizzeria?",
+        answer: "Absolutely! Bozzarella is designed for pizzerias of all sizes, including small family-run establishments. In fact, smaller restaurants often benefit the most as AI phone ordering frees up your limited staff to focus on what matters - making great pizza. The system is easy to set up, cost-effective (you only pay per order), and helps you provide consistent service even during busy times or when you're short-staffed."
+      },
+      {
         question: "How does Bozzarella handle complex orders?",
         answer: "Our AI is trained to handle multi-item orders, special requests, and modifications with ease. It can clarify details with customers and ensure order accuracy through natural conversation."
       },
