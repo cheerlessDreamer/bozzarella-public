@@ -1,4 +1,8 @@
-import { Bot, CreditCard, FileText, MessageSquare, Phone, PlusCircle, Receipt, Repeat, Globe2, Shield, Clock, Calendar, Truck, CreditCard as Payment, Settings } from "lucide-react";
+import { useState } from "react";
+import { Bot, CreditCard, FileText, MessageSquare, Phone, PlusCircle, Receipt, Repeat, Globe2, Shield, Clock, Calendar, Truck, CreditCard as Payment, Settings, ChevronDown } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { Button } from "./ui/button";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible";
 
 const features = [
   {
@@ -73,7 +77,12 @@ const features = [
   }
 ];
 
+const mainFeatures = features.slice(0, 6);
+const additionalFeatures = features.slice(6);
+
 export const Features = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className="py-20 bg-dark-lighter">
       <div className="container mx-auto px-4">
@@ -83,8 +92,9 @@ export const Features = () => {
             Everything you need to automate your restaurant's phone orders
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {mainFeatures.map((feature, index) => (
             <div
               key={index}
               className="p-6 rounded-lg bg-dark border border-gray-800 hover:border-primary/50 transition-colors"
@@ -95,6 +105,45 @@ export const Features = () => {
             </div>
           ))}
         </div>
+
+        <Collapsible
+          open={isOpen}
+          onOpenChange={setIsOpen}
+          className="w-full max-w-7xl mx-auto"
+        >
+          <div className="flex justify-center mt-8">
+            <CollapsibleTrigger asChild>
+              <Button
+                variant="ghost"
+                className="flex items-center gap-2 text-primary hover:text-primary/90"
+              >
+                {isOpen ? "Show less" : "And much more"}
+                <ChevronDown className={cn(
+                  "h-4 w-4 transition-transform duration-200",
+                  isOpen && "rotate-180"
+                )} />
+              </Button>
+            </CollapsibleTrigger>
+          </div>
+          
+          <CollapsibleContent className="mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {additionalFeatures.map((feature, index) => (
+                <div
+                  key={index}
+                  className="p-6 rounded-lg bg-dark border border-gray-800 hover:border-primary/50 transition-colors animate-fade-up"
+                  style={{
+                    animationDelay: `${index * 100}ms`
+                  }}
+                >
+                  <div className="text-primary mb-4">{feature.icon}</div>
+                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-gray-400">{feature.description}</p>
+                </div>
+              ))}
+            </div>
+          </CollapsibleContent>
+        </Collapsible>
       </div>
     </section>
   );
