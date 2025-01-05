@@ -16,16 +16,16 @@ export const Hero = () => {
 
   const features = [
     {
-      title: "24/7 Order Taking",
-      description: "Never miss a call, even during peak hours or after closing time. Handle multiple orders simultaneously while your staff focuses on making great pizzas.",
+      title: t("hero.features.orderTaking"),
+      description: t("hero.features.orderTakingDesc"),
     },
     {
-      title: "Rural-First Solution",
-      description: "Perfect for rural pizzerias where delivery apps aren't available. Bring big-city technology to small-town restaurants without the big-city costs.",
+      title: t("hero.features.zeroMistakes"),
+      description: t("hero.features.zeroMistakesDesc"),
     },
     {
-      title: "Cost Reduction",
-      description: "Save on staffing costs and reduce order errors. No more miscommunications or lost orders - just precise, consistent service every time.",
+      title: t("hero.features.staffFreedom"),
+      description: t("hero.features.staffFreedomDesc"),
     }
   ];
 
