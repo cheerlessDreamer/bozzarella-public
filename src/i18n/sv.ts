@@ -4,14 +4,14 @@ export const sv: TranslationType = {
   hero: {
     title: "Din Restaurangs Röst,",
     subtitle: "Alltid Tillgänglig",
-    description: "Bozzarella är din AI-telefonkompis dygnet runt, som tar perfekta pizzabeställningar medan du fokuserar på att laga fantastisk mat!",
+    description: "Bozzarella är din AI-telefonassistent, speciellt utformad för landsbygdsrestauranger för att hantera beställningar perfekt medan du fokuserar på det som betyder mest.",
     features: {
       orderTaking: "Tar Emot Beställningar 24/7",
-      orderTakingDesc: "Missa aldrig ett samtal, även under rusningstid eller efter stängning.",
-      zeroMistakes: "Inga Misstag",
-      zeroMistakesDesc: "Varje beställning registreras med perfekt noggrannhet, varje gång.",
-      staffFreedom: "Personalfrihet",
-      staffFreedomDesc: "Låt ditt team fokusera på matlagning och servering, inte på att svara i telefon."
+      orderTakingDesc: "Missa aldrig ett samtal, även under rusningstid eller efter stängning. Hantera flera beställningar samtidigt medan din personal fokuserar på att laga fantastiska pizzor.",
+      ruralFirst: "Landsbygdsförst Lösning",
+      ruralFirstDesc: "Perfekt för landsbygdsrestauranger där leveransappar inte är tillgängliga. Ta med storstads teknologi till småstadens restauranger utan storstads kostnader.",
+      costReduction: "Kostnadsreduktion",
+      costReductionDesc: "Spara på personal kostnader och minska beställningsfel. Inga fler missförstånd eller förlorade beställningar - bara precis, konsekvent service varje gång."
     },
     betaButton: "Gå Med i Betaprogrammet",
     watchDemo: "Se Demo"
@@ -94,39 +94,39 @@ export const sv: TranslationType = {
       }
     ]
   },
-    pricing: {
-      title: "Rättvist Pris för Varje Restaurang",
-      subtitle: "Oavsett om du driver en liten familjerestaurang eller en stor verksamhet har vi en plan som passar dig",
-      small: {
-        title: "Liten Restaurang",
-        description: "Perfekt för familjedrivna restauranger som hanterar upp till 500 telefonbeställningar per månad",
-        features: [
-          "Betala per beställning",
-          "Inga månadskostnader",
-          "Alla funktioner ingår"
-        ]
-      },
-      medium: {
-        title: "Mellanstor Restaurang",
-        description: "Perfekt för etablerade lokala favoriter med 500-2000 beställningar per månad",
-        features: [
-          "Flexibla betalningsalternativ",
-          "Volymrabatter",
-          "Alla funktioner ingår"
-        ],
-        popular: "Mest Populär"
-      },
-      large: {
-        title: "Stor Restaurang",
-        description: "Idealisk för restauranger med över 2000 beställningar per månad",
-        features: [
-          "Anpassade prisplaner",
-          "Prioriterad support",
-          "Alla funktioner ingår"
-        ]
-      },
-      contactUs: "Kontakta oss för priser"
+  pricing: {
+    title: "Rättvist Pris för Varje Restaurang",
+    subtitle: "Oavsett om du driver en liten familjerestaurang eller en stor verksamhet har vi en plan som passar dig",
+    small: {
+      title: "Liten Restaurang",
+      description: "Perfekt för familjedrivna restauranger som hanterar upp till 500 telefonbeställningar per månad",
+      features: [
+        "Betala per beställning",
+        "Inga månadskostnader",
+        "Alla funktioner ingår"
+      ]
     },
+    medium: {
+      title: "Mellanstor Restaurang",
+      description: "Perfekt för etablerade lokala favoriter med 500-2000 beställningar per månad",
+      features: [
+        "Flexibla betalningsalternativ",
+        "Volymrabatter",
+        "Alla funktioner ingår"
+      ],
+      popular: "Mest Populär"
+    },
+    large: {
+      title: "Stor Restaurang",
+      description: "Idealisk för restauranger med över 2000 beställningar per månad",
+      features: [
+        "Anpassade prisplaner",
+        "Prioriterad support",
+        "Alla funktioner ingår"
+      ]
+    },
+    contactUs: "Kontakta oss för priser"
+  },
   faq: {
     title: "Vanliga Frågor",
     subtitle: "Allt du behöver veta om Bozzarella och hur det kan hjälpa din restaurang",
@@ -135,36 +135,36 @@ export const sv: TranslationType = {
         question: "Passar AI verkligen för min lilla pizzeria på landsbygden?",
         answer: "Absolut! Bozzarella är utformat för pizzerior i alla storlekar, inklusive små familjedrivna verksamheter. Faktum är att mindre restauranger ofta drar störst nytta av AI-telefonbeställningar eftersom det frigör din begränsade personal att fokusera på det viktiga - att göra fantastisk pizza. Systemet är enkelt att installera, kostnadseffektivt (du betalar endast per beställning) och hjälper dig att ge konsekvent service även under rusningstider eller när ni är underbemannade."
       },
-        {
-          question: "Vad händer om AI:n inte förstår en kund?",
-          answer: "Om AI:n har svårt att förstå kunden ber den artigt om förtydligande. I sällsynta fall där kommunikationen blir utmanande kan samtalet sömlöst överföras till din personal."
-        },
-        {
-          question: "Hur integrerar Bozzarella med befintliga kassasystem?",
-          answer: "Bozzarella är designad för att integreras med de flesta större kassasystem. Under uppstarten hjälper vi dig att säkerställa en smidig integration med din befintliga setup."
-        },
-        {
-          question: "Finns det bindningstid eller minimikrav?",
-          answer: "Inga långtidskontrakt krävs. Du kan börja med våra flexibla månadsplaner och justera eller avsluta efter behov."
-        },
-        {
-          question: "Hur lång tid tar det att komma igång med Bozzarella?",
-          answer: "De flesta restauranger är igång inom 1-2 arbetsdagar. Detta inkluderar systemintegration, menyuppsättning och anpassning av AI:ns svar för att matcha din restaurangs stil."
-        },
-        {
-          question: "Hur ser det ut med datasäkerhet och integritet?",
-          answer: "Vi tar säkerhet på största allvar. All kunddata är krypterad och vi följer branschstandarder för dataskydd. Vi delar eller säljer aldrig kundinformation."
-        }
+      {
+        question: "Vad händer om AI:n inte förstår en kund?",
+        answer: "Om AI:n har svårt att förstå kunden ber den artigt om förtydligande. I sällsynta fall där kommunikationen blir utmanande kan samtalet sömlöst överföras till din personal."
+      },
+      {
+        question: "Hur integrerar Bozzarella med befintliga kassasystem?",
+        answer: "Bozzarella är designad för att integreras med de flesta större kassasystem. Under uppstarten hjälper vi dig att säkerställa en smidig integration med din befintliga setup."
+      },
+      {
+        question: "Finns det bindningstid eller minimikrav?",
+        answer: "Inga långtidskontrakt krävs. Du kan börja med våra flexibla månadsplaner och justera eller avsluta efter behov."
+      },
+      {
+        question: "Hur lång tid tar det att komma igång med Bozzarella?",
+        answer: "De flesta restauranger är igång inom 1-2 arbetsdagar. Detta inkluderar systemintegration, menyuppsättning och anpassning av AI:ns svar för att matcha din restaurangs stil."
+      },
+      {
+        question: "Hur ser det ut med datasäkerhet och integritet?",
+        answer: "Vi tar säkerhet på största allvar. All kunddata är krypterad och vi följer branschstandarder för dataskydd. Vi delar eller säljer aldrig kundinformation."
+      }
     ]
   },
-    betaProgram: {
-      title: "Gå Med i Vårt Betaprogram",
-      subtitle: "Var bland de första att uppleva Bozzarella och hjälp till att forma framtiden för restaurangbeställningar. Betaanvändare får gratis tillgång.",
-      button: "Få Tidig Tillgång"
-    },
-    betaBanner: {
-      title: "Vi söker betatestare!",
-      action: "Gå med i vårt program",
-      suffix: "och få gratis tillgång."
-    }
+  betaProgram: {
+    title: "Gå Med i Vårt Betaprogram",
+    subtitle: "Var bland de första att uppleva Bozzarella och hjälp till att forma framtiden för restaurangbeställningar. Betaanvändare får gratis tillgång.",
+    button: "Få Tidig Tillgång"
+  },
+  betaBanner: {
+    title: "Vi söker betatestare!",
+    action: "Gå med i vårt program",
+    suffix: "och få gratis tillgång."
+  }
 };

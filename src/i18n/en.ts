@@ -4,15 +4,7 @@ export const en: TranslationType = {
   hero: {
     title: "Your Restaurant's Voice,",
     subtitle: "Always On Call",
-    description: "Bozzarella is your 24/7 AI phone buddy, taking perfect pizza orders while you focus on crafting amazing food!",
-    features: {
-      orderTaking: "24/7 Order Taking",
-      orderTakingDesc: "Never miss a call, even during peak hours or after closing time.",
-      zeroMistakes: "Zero Mistakes",
-      zeroMistakesDesc: "Every order captured with perfect accuracy, every single time.",
-      staffFreedom: "Staff Freedom",
-      staffFreedomDesc: "Let your team focus on cooking and serving, not answering phones."
-    },
+    description: "Bozzarella is your AI phone assistant, designed specifically for rural restaurants to handle orders perfectly while you focus on what matters most.",
     betaButton: "Join Beta Program",
     watchDemo: "Watch Demo"
   },

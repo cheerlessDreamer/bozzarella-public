@@ -3,14 +3,31 @@ import { Video } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { BetaDialog } from "./BetaDialog";
+import { useState } from "react";
 
 export const Hero = () => {
   const { t } = useLanguage();
+  const [hoveredFeature, setHoveredFeature] = useState<number | null>(null);
 
   const scrollToVideo = () => {
     const videoSection = document.getElementById('demo-video');
     videoSection?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const features = [
+    {
+      title: "24/7 Order Taking",
+      description: "Never miss a call, even during peak hours or after closing time. Handle multiple orders simultaneously while your staff focuses on making great pizzas.",
+    },
+    {
+      title: "Rural-First Solution",
+      description: "Perfect for rural pizzerias where delivery apps aren't available. Bring big-city technology to small-town restaurants without the big-city costs.",
+    },
+    {
+      title: "Cost Reduction",
+      description: "Save on staffing costs and reduce order errors. No more miscommunications or lost orders - just precise, consistent service every time.",
+    }
+  ];
 
   return (
     <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
@@ -35,32 +52,43 @@ export const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up">
           <h1 className="text-5xl md:text-7xl font-bold">
-            {t('hero.title')}
-            <span className="gradient-text block mt-2">{t('hero.subtitle')}</span>
+            {t("hero.title")}
+            <span className="gradient-text block mt-2">{t("hero.subtitle")}</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto">
-            {t('hero.description')}
+            {t("hero.description")}
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-8">
-            <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800 transition-all duration-300 hover:bg-dark-lighter/70 hover:border-gray-700 hover:shadow-lg">
-              <h3 className="text-lg font-semibold mb-2">{t('hero.features.orderTaking')}</h3>
-              <p className="text-gray-400">
-                {t('hero.features.orderTakingDesc')}
-              </p>
-            </div>
-            <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800 transition-all duration-300 hover:bg-dark-lighter/70 hover:border-gray-700 hover:shadow-lg">
-              <h3 className="text-lg font-semibold mb-2">{t('hero.features.zeroMistakes')}</h3>
-              <p className="text-gray-400">
-                {t('hero.features.zeroMistakesDesc')}
-              </p>
-            </div>
-            <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800 transition-all duration-300 hover:bg-dark-lighter/70 hover:border-gray-700 hover:shadow-lg">
-              <h3 className="text-lg font-semibold mb-2">{t('hero.features.staffFreedom')}</h3>
-              <p className="text-gray-400">
-                {t('hero.features.staffFreedomDesc')}
-              </p>
-            </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className={`bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800 transition-all duration-300 cursor-pointer
+                  ${hoveredFeature === index ? 'border-primary bg-dark-lighter/70' : 'hover:bg-dark-lighter/70 hover:border-gray-700'}
+                `}
+                onMouseEnter={() => setHoveredFeature(index)}
+                onMouseLeave={() => setHoveredFeature(null)}
+              >
+                <h3 className={`text-lg font-semibold mb-2 transition-colors duration-300 
+                  ${hoveredFeature === index ? 'text-primary' : 'text-white'}`}>
+                  {feature.title}
+                </h3>
+              </div>
+            ))}
           </div>
+
+          <div className="h-24 transition-all duration-300">
+            {hoveredFeature !== null ? (
+              <p className="text-gray-400 animate-fade-up">
+                {features[hoveredFeature].description}
+              </p>
+            ) : (
+              <p className="text-gray-400 animate-fade-up">
+                Hover over each feature to learn more about how Bozzarella can help your restaurant thrive.
+              </p>
+            )}
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <BetaDialog 
               trigger={
@@ -68,7 +96,7 @@ export const Hero = () => {
                   size="lg" 
                   className="bg-primary hover:bg-primary-hover text-white"
                 >
-                  {t('hero.betaButton')}
+                  {t("hero.betaButton")}
                 </Button>
               }
             />
@@ -79,7 +107,7 @@ export const Hero = () => {
               onClick={scrollToVideo}
             >
               <Video className="w-4 h-4" />
-              {t('hero.watchDemo')}
+              {t("hero.watchDemo")}
             </Button>
           </div>
 
