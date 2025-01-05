@@ -126,15 +126,12 @@ export const Features = () => {
             </CollapsibleTrigger>
           </div>
           
-          <CollapsibleContent className="mt-8">
+          <CollapsibleContent className="mt-8 animate-fade-up">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {additionalFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className="p-6 rounded-lg bg-dark border border-gray-800 hover:border-primary/50 transition-colors animate-fade-up"
-                  style={{
-                    animationDelay: `${index * 100}ms`
-                  }}
+                  className="p-6 rounded-lg bg-dark border border-gray-800 hover:border-primary/50 transition-colors"
                 >
                   <div className="text-primary mb-4">{feature.icon}</div>
                   <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
