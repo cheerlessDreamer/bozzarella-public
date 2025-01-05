@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Video } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export const Hero = () => {
+  const { t } = useLanguage();
+
   const scrollToVideo = () => {
     const videoSection = document.getElementById('demo-video');
     videoSection?.scrollIntoView({ behavior: 'smooth' });
@@ -9,7 +13,6 @@ export const Hero = () => {
 
   return (
     <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -20,32 +23,36 @@ export const Hero = () => {
         <div className="absolute inset-0 hero-gradient" />
       </div>
 
+      <div className="absolute top-4 right-4">
+        <LanguageSwitcher />
+      </div>
+
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up">
           <h1 className="text-5xl md:text-7xl font-bold">
-            Your Restaurant's Voice,
-            <span className="gradient-text block mt-2">Always On Call</span>
+            {t('hero.title')}
+            <span className="gradient-text block mt-2">{t('hero.subtitle')}</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto">
-            Bozzarella is your 24/7 AI phone buddy, taking perfect pizza orders while you focus on crafting amazing food!
+            {t('hero.description')}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-8">
             <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800 transition-all duration-300 hover:bg-dark-lighter/70 hover:border-gray-700 hover:shadow-lg">
-              <h3 className="text-lg font-semibold mb-2">24/7 Order Taking</h3>
+              <h3 className="text-lg font-semibold mb-2">{t('hero.features.orderTaking')}</h3>
               <p className="text-gray-400">
-                Never miss a call, even during peak hours or after closing time.
+                {t('hero.features.orderTakingDesc')}
               </p>
             </div>
             <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800 transition-all duration-300 hover:bg-dark-lighter/70 hover:border-gray-700 hover:shadow-lg">
-              <h3 className="text-lg font-semibold mb-2">Zero Mistakes</h3>
+              <h3 className="text-lg font-semibold mb-2">{t('hero.features.zeroMistakes')}</h3>
               <p className="text-gray-400">
-                Every order captured with perfect accuracy, every single time.
+                {t('hero.features.zeroMistakesDesc')}
               </p>
             </div>
             <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800 transition-all duration-300 hover:bg-dark-lighter/70 hover:border-gray-700 hover:shadow-lg">
-              <h3 className="text-lg font-semibold mb-2">Staff Freedom</h3>
+              <h3 className="text-lg font-semibold mb-2">{t('hero.features.staffFreedom')}</h3>
               <p className="text-gray-400">
-                Let your team focus on cooking and serving, not answering phones.
+                {t('hero.features.staffFreedomDesc')}
               </p>
             </div>
           </div>
@@ -55,7 +62,7 @@ export const Hero = () => {
               className="bg-primary hover:bg-primary-hover text-white"
               onClick={() => window.open("https://form.typeform.com/to/placeholder", "_blank")}
             >
-              Join Beta Program
+              {t('hero.betaButton')}
             </Button>
             <Button 
               size="lg" 
@@ -64,7 +71,7 @@ export const Hero = () => {
               onClick={scrollToVideo}
             >
               <Video className="w-4 h-4" />
-              Watch Demo
+              {t('hero.watchDemo')}
             </Button>
           </div>
 
