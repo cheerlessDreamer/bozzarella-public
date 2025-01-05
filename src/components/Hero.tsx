@@ -6,6 +6,11 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export const Hero = () => {
   return (
@@ -58,26 +63,29 @@ export const Hero = () => {
             >
               Join Beta Program
             </Button>
-            <TooltipProvider delayDuration={100}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <span>
-                    <Button 
-                      size="lg" 
-                      variant="outline" 
-                      className="gap-2 w-full" 
-                      disabled
-                    >
-                      <Phone className="w-4 h-4" />
-                      Request Demo
-                    </Button>
-                  </span>
-                </TooltipTrigger>
-                <TooltipContent side="top" className="z-50">
-                  <p>Coming soon!</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="gap-2"
+                >
+                  <Phone className="w-4 h-4" />
+                  Watch Demo
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[800px] p-0 bg-black">
+                <div className="aspect-video w-full">
+                  {/* Replace the src with your actual video URL once you have it */}
+                  <iframe
+                    className="w-full h-full"
+                    src="about:blank" // Replace with your YouTube/Vimeo embed URL
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </div>
