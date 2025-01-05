@@ -30,6 +30,20 @@ export const Hero = () => {
           <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto">
             Bozzarella is an AI assistant that takes phone orders for your restaurant, so you can focus on what matters most.
           </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mt-8">
+            <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800">
+              <h3 className="text-lg font-semibold mb-2">Never Miss an Order</h3>
+              <p className="text-gray-400">
+                While you focus on creating amazing dishes and serving in-house customers, our AI ensures every call is answered promptly - even during peak hours.
+              </p>
+            </div>
+            <div className="bg-dark-lighter/50 backdrop-blur-sm p-6 rounded-lg border border-gray-800">
+              <h3 className="text-lg font-semibold mb-2">Perfect Accuracy</h3>
+              <p className="text-gray-400">
+                Every order is captured with precision, eliminating costly mistakes and ensuring customer satisfaction, while reducing the stress on your staff.
+              </p>
+            </div>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
