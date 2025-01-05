@@ -1,18 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Video } from "lucide-react";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-} from "@/components/ui/dialog";
 
 export const Hero = () => {
+  const scrollToVideo = () => {
+    const videoSection = document.getElementById('demo-video');
+    videoSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -63,28 +57,26 @@ export const Hero = () => {
             >
               Join Beta Program
             </Button>
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="gap-2"
-                >
-                  <Video className="w-4 h-4" />
-                  Watch Demo
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="sm:max-w-[800px] p-0 bg-black">
-                <div className="aspect-video w-full">
-                  <iframe
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
-              </DialogContent>
-            </Dialog>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="gap-2"
+              onClick={scrollToVideo}
+            >
+              <Video className="w-4 h-4" />
+              Watch Demo
+            </Button>
+          </div>
+
+          <div id="demo-video" className="mt-16 max-w-4xl mx-auto bg-dark-lighter rounded-lg overflow-hidden">
+            <div className="aspect-video w-full">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
           </div>
         </div>
       </div>
