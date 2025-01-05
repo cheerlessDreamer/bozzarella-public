@@ -15,7 +15,7 @@ export const Hero = () => {
   return (
     <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-bottom"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-bottom w-full"
         style={{
           backgroundImage: 'url("/hero.png")',
           maxWidth: '1920px',
