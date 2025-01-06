@@ -1,6 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { BetaDialog } from "./BetaDialog";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const CTA = () => {
+  const { t } = useLanguage();
+  
   return (
     <section className="py-32 bg-dark-lighter relative overflow-hidden">
       <div className="container mx-auto px-4">
@@ -8,17 +12,21 @@ export const CTA = () => {
           {/* Left column with text and button */}
           <div className="space-y-6">
             <h2 className="text-5xl font-bold leading-tight">
-              Ready to simplify your financial transactions?
+              Join Our Beta Program Today
             </h2>
             <p className="text-gray-400 text-lg">
-              Join thousands of satisfied users and experience the difference.
+              {t('betaProgram.subtitle')}
             </p>
-            <Button 
-              size="lg"
-              className="bg-white text-dark hover:bg-gray-100"
-            >
-              Open an Account
-            </Button>
+            <BetaDialog 
+              trigger={
+                <Button 
+                  size="lg"
+                  className="bg-white text-dark hover:bg-gray-100"
+                >
+                  {t('betaProgram.button')}
+                </Button>
+              }
+            />
           </div>
           
           {/* Right column with card image */}
@@ -28,15 +36,15 @@ export const CTA = () => {
                 <div className="flex justify-between items-start">
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-6 bg-white/20 rounded" />
-                    <span className="font-semibold">Zenpay</span>
+                    <span className="font-semibold">Bozzarella</span>
                   </div>
                   <div className="w-12 h-8 bg-white/20 rounded" />
                 </div>
                 <div className="space-y-4">
                   <div className="w-12 h-8 bg-white/20 rounded" />
                   <div className="space-y-2">
-                    <p className="text-dark text-sm font-medium">Devon Lane</p>
-                    <p className="text-dark/60 text-sm">•••• 4729</p>
+                    <p className="text-dark text-sm font-medium">Beta Access</p>
+                    <p className="text-dark/60 text-sm">Early Adopter</p>
                   </div>
                   <div className="flex justify-end">
                     <div className="w-16 h-8 bg-white/20 rounded" />

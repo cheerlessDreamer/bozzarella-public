@@ -1,6 +1,5 @@
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
-import { BetaProgram } from "@/components/BetaProgram";
 import { Footer } from "@/components/Footer";
 import { BetaBanner } from "@/components/BetaBanner";
 import { FAQ } from "@/components/FAQ";
@@ -17,7 +16,6 @@ const Index = () => {
       {/* <Pricing /> */}
       <FAQ />
       <CTA />
-      <BetaProgram />
       <Footer />
     </div>
   );
