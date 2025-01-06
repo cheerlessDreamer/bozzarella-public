@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/bozzarella/' : '/',
+  base: mode === 'production' ? '/bozzarella-public/' : '/',
   server: {
     host: "::",
     port: 8080,
