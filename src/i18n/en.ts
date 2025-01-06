@@ -9,7 +9,7 @@ export const en: TranslationType = {
       orderTaking: "24/7 Order Taking",
       orderTakingDesc: "Never miss a call, even during peak hours or after closing time. Handle multiple orders simultaneously while your staff focuses on making great pizzas.",
       zeroMistakes: "Affordable Digital Orders",
-      zeroMistakesDesc: "Perfect for restaurants where delivery apps aren't available or too expensive. Bring enterprise-level technology to your restaurant without the enterprise costs.",
+      zeroMistakesDesc: "While big chains got bigger, small restaurants were left with expensive solutions that didn't fit. We're changing that with a simple first step: AI phone ordering that works for you, at a price that makes sense.",
       staffFreedom: "Cost Reduction",
       staffFreedomDesc: "Save on staffing costs and reduce order errors. No more miscommunications or lost orders - just precise, consistent service every time."
     },
