@@ -1,133 +1,175 @@
-export const sv = {
-  common: {
-    betaAccess: "Få tidig åtkomst",
-    joinBeta: "Gå med i betaprogrammet",
-    emailPlaceholder: "Din e-postadress",
-    submit: "Skicka",
-    success: "Tack för din anmälan!",
-    error: "Något gick fel. Försök igen senare.",
-    close: "Stäng"
-  },
+import { TranslationType } from './types';
+
+export const sv: TranslationType = {
   hero: {
-    title: "Din restaurangs",
-    subtitle: "AI-telefonist",
-    description: "Låt AI ta hand om dina telefonbeställningar medan du fokuserar på det viktiga - att laga fantastisk mat.",
-    betaButton: "Kom igång",
-    watchDemo: "Se demo",
+    title: "Din Restaurangs Röst,",
+    subtitle: "Alltid Tillgänglig",
+    description: "Bozzarella är din AI-telefonassistent, speciellt utformad för landsbygdsrestauranger för att hantera beställningar perfekt medan du fokuserar på det som betyder mest.",
     features: {
-      orderTaking: "Automatisk orderhantering",
-      orderTakingDesc: "Tar emot beställningar dygnet runt",
-      smallRestaurants: "För små restauranger",
-      smallRestaurantsDesc: "Perfekt för familjeägda verksamheter",
-      staffFreedom: "Frigör personal",
-      staffFreedomDesc: "Låt personalen fokusera på gästerna"
-    }
+      orderTaking: "Tar Emot Beställningar 24/7",
+      orderTakingDesc: "Missa aldrig ett samtal, även under rusningstid eller efter stängning. Hantera flera beställningar samtidigt medan din personal fokuserar på att laga fantastiska pizzor.",
+      smallRestaurants: "Perfekt för Små Restauranger",
+      smallRestaurantsDesc: "Medan stora kedjor blev större lämnades små restauranger med dyra lösningar som inte passade. Vi ändrar på det med ett enkelt första steg: AI-telefonbeställning som fungerar för dig, till ett pris som är vettigt.",
+      staffFreedom: "Kostnadsreduktion",
+      staffFreedomDesc: "Spara på personal kostnader och minska beställningsfel. Inga fler missförstånd eller förlorade beställningar - bara precis, konsekvent service varje gång."
+    },
+    hoverText: "Håll muspekaren över varje funktion för att lära dig mer om hur Bozzarella kan hjälpa din restaurang att blomstra.",
+    betaButton: "Gå Med i Betaprogrammet",
+    watchDemo: "Se Demo"
   },
   features: {
-    title: "Funktioner",
-    subtitle: "Allt du behöver för att automatisera din telefonorderhantering",
-    showMore: "Visa fler funktioner",
-    showLess: "Visa färre",
+    title: "Kraftfulla Funktioner",
+    subtitle: "Allt du behöver för att automatisera restaurangens telefonbeställningar",
+    showMore: "Och mycket mer",
+    showLess: "Visa mindre",
     items: [
       {
         key: "menuIntegration",
         title: "Menyintegration",
-        description: "Synkroniserar automatiskt med din digitala meny"
+        description: "Automatisk menytolkning från Foodora, Wolt eller PDF-format"
       },
       {
         key: "phoneAvailability",
-        title: "24/7 Tillgänglighet",
-        description: "Tar emot beställningar dygnet runt"
+        title: "Tillgänglig 24/7",
+        description: "Missa aldrig en telefonbeställning, dag som natt"
       },
       {
         key: "payments",
-        title: "Betalningshantering",
-        description: "Säker hantering av kortbetalningar"
+        title: "Swish Betalningar",
+        description: "Smidig betalningshantering via Swish eller vid leverans"
       },
       {
         key: "notifications",
-        title: "Ordernotifieringar",
-        description: "Direkta uppdateringar till kök och personal"
+        title: "Direkta Notifieringar",
+        description: "Beställningar skickas via SMS, e-post eller direkt API-integration"
       },
       {
         key: "customization",
-        title: "Anpassningsbar",
-        description: "Skräddarsy efter dina behov"
+        title: "Anpassning",
+        description: "Hantera ändringar och specialönskemål med lätthet"
       },
       {
         key: "orderHistory",
         title: "Orderhistorik",
-        description: "Spåra och analysera alla beställningar"
+        description: "Kom ihåg återkommande kunder och deras preferenser"
       },
       {
         key: "multilingual",
-        title: "Flerspråkig",
-        description: "Stöd för flera språk"
+        title: "Flerspråkigt Stöd",
+        description: "Ta emot beställningar på alla språk, gör din pizzeria tillgänglig för alla"
       },
       {
         key: "humanBackup",
-        title: "Mänsklig backup",
-        description: "Support vid behov"
+        title: "Mänsklig Backup",
+        description: "Överför sömlöst samtal till din personal vid behov - vi vet att ibland behövs en mänsklig touch"
       },
       {
         key: "privacy",
-        title: "Datasäkerhet",
-        description: "GDPR-kompatibel datahantering"
+        title: "Sekretess Först",
+        description: "Välj om du vill lagra orderhistorik eller hålla det privat - du har kontrollen"
+      },
+      {
+        key: "delivery",
+        title: "Leveranskontroll",
+        description: "Aktivera/inaktivera leveransservice och ställ in leveranszoner och minimibeställningar"
+      },
+      {
+        key: "paymentSettings",
+        title: "Betalningsinställningar",
+        description: "Konfigurera krav på förbetalning och accepterade betalningsmetoder"
+      },
+      {
+        key: "operatingHours",
+        title: "Öppettider",
+        description: "Ställ in ordinarie öppettider och särskilda helgscheman"
+      },
+      {
+        key: "availability",
+        title: "Tillgänglighetshantering",
+        description: "Uppdatera enkelt status för oväntade stängningar, helgdagar eller reducerad kapacitet"
+      },
+      {
+        key: "kitchenCapacity",
+        title: "Kökskapacitet",
+        description: "Ställ in ordergränser baserat på kökskapacitet och aktuella väntetider"
       }
     ]
   },
-  howItWorks: {
-    title: "Hur det fungerar",
-    signUp: {
-      title: "Registrera dig",
-      description: "Skapa ett konto på bara några minuter."
+  pricing: {
+    title: "Rättvist Pris för Varje Restaurang",
+    subtitle: "Oavsett om du driver en liten familjerestaurang eller en stor verksamhet har vi en plan som passar dig",
+    small: {
+      title: "Liten Restaurang",
+      description: "Perfekt för familjedrivna restauranger som hanterar upp till 500 telefonbeställningar per månad",
+      features: [
+        "Betala per beställning",
+        "Inga månadskostnader",
+        "Alla funktioner ingår"
+      ]
     },
-    connect: {
-      title: "Anslut din restaurang",
-      description: "Integrera säkert din meny och ditt beställningssystem."
+    medium: {
+      title: "Mellanstor Restaurang",
+      description: "Perfekt för etablerade lokala favoriter med 500-2000 beställningar per månad",
+      features: [
+        "Flexibla betalningsalternativ",
+        "Volymrabatter",
+        "Alla funktioner ingår"
+      ],
+      popular: "Mest Populär"
     },
-    start: {
-      title: "Börja ta emot beställningar",
-      description: "Låt AI hantera dina telefonbeställningar medan du fokuserar på matlagningen."
-    }
+    large: {
+      title: "Stor Restaurang",
+      description: "Idealisk för restauranger med över 2000 beställningar per månad",
+      features: [
+        "Anpassade prisplaner",
+        "Prioriterad support",
+        "Alla funktioner ingår"
+      ]
+    },
+    contactUs: "Kontakta oss för priser"
   },
   faq: {
-    title: "Vanliga frågor",
-    subtitle: "Hitta svar på de vanligaste frågorna om vår tjänst",
+    title: "Vanliga Frågor",
+    subtitle: "Allt du behöver veta om Bozzarella och hur det kan hjälpa din restaurang",
     questions: [
       {
-        question: "Hur fungerar det?",
-        answer: "Vår AI-telefonist svarar på inkommande samtal, tar emot beställningar och skickar dem direkt till ditt kök."
+        question: "Hur ser era prisalternativ ut?",
+        answer: "Vi har ännu inte fastställt vår prisstruktur, men vi kommer att erbjuda flexibla alternativ som fungerar för restauranger av alla storlekar. Detta kommer att inkludera både fasta månadsplaner och betalning per beställning, så att du kan välja det som passar din verksamhet bäst. Vi förstår att varje restaurang har unika behov och volymer, och vår prissättning kommer att återspegla denna flexibilitet."
       },
       {
-        question: "Är det dyrt?",
-        answer: "Vi erbjuder konkurrenskraftiga priser anpassade för små restauranger."
+        question: "Passar AI verkligen för min lilla pizzeria på landsbygden?",
+        answer: "Absolut! Bozzarella är utformat för pizzerior i alla storlekar, inklusive små familjedrivna verksamheter. Faktum är att mindre restauranger ofta drar störst nytta av AI-telefonbeställningar eftersom det frigör din begränsade personal att fokusera på det viktiga - att göra fantastisk pizza. Systemet är enkelt att installera, kostnadseffektivt (du betalar endast per beställning) och hjälper dig att ge konsekvent service även under rusningstider eller när ni är underbemannade."
       },
       {
-        question: "Hur lång är uppsägningstiden?",
-        answer: "Ingen bindningstid - avsluta när du vill."
+        question: "Vad händer om AI:n inte förstår en kund?",
+        answer: "Om AI:n har svårt att förstå kunden ber den artigt om förtydligande. I sällsynta fall där kommunikationen blir utmanande kan samtalet sömlöst överföras till din personal."
+      },
+      {
+        question: "Hur integrerar Bozzarella med befintliga kassasystem?",
+        answer: "Bozzarella är designad för att integreras med de flesta större kassasystem. Under uppstarten hjälper vi dig att säkerställa en smidig integration med din befintliga setup."
+      },
+      {
+        question: "Finns det bindningstid eller minimikrav?",
+        answer: "Inga långtidskontrakt krävs. Du kan börja med våra flexibla månadsplaner och justera eller avsluta efter behov."
+      },
+      {
+        question: "Hur lång tid tar det att komma igång med Bozzarella?",
+        answer: "De flesta restauranger är igång inom 1-2 arbetsdagar. Detta inkluderar systemintegration, menyuppsättning och anpassning av AI:ns svar för att matcha din restaurangs stil."
+      },
+      {
+        question: "Hur ser det ut med datasäkerhet och integritet?",
+        answer: "Vi tar säkerhet på största allvar. All kunddata är krypterad och vi följer branschstandarder för dataskydd. Vi delar eller säljer aldrig kundinformation."
       }
     ]
   },
-  beta: {
-    title: "Gå med i vårt betaprogram",
-    description: "Var bland de första att testa vår AI-telefonist",
-    benefits: {
-      title: "Fördelar med betaprogrammet",
-      items: [
-        "Tidig åtkomst till alla funktioner",
-        "Rabatterat pris för tidig anmälan",
-        "Direkt support från utvecklingsteamet",
-        "Möjlighet att påverka produktens utveckling"
-      ]
-    }
+  betaProgram: {
+    title: "Gå Med i Vårt Betaprogram",
+    subtitle: "Var bland de första att uppleva Bozzarella och hjälp till att forma framtiden för restaurangbeställningar. Betaanvändare får gratis tillgång.",
+    button: "Få Tidig Tillgång"
   },
-  footer: {
-    rights: "Alla rättigheter förbehållna",
-    links: {
-      privacy: "Integritetspolicy",
-      terms: "Användarvillkor",
-      contact: "Kontakt"
-    }
+  betaBanner: {
+    title: "Vi söker betatestare!",
+    action: "Gå med i vårt program",
+    suffix: "och få gratis tillgång."
   }
-} as const;
+};
