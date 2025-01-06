@@ -1,32 +1,57 @@
-import { TranslationType } from './types';
-
-export const en: TranslationType = {
+export const en = {
+  common: {
+    beta: "Beta",
+    joinBeta: "Join Beta",
+    name: "Name",
+    email: "Email",
+    phone: "Phone",
+    submit: "Submit",
+    success: "Success!",
+    error: "Error",
+    required: "Required",
+    invalidEmail: "Invalid email",
+    close: "Close"
+  },
   hero: {
-    title: "Your Restaurant's Voice,",
-    subtitle: "Always On Call",
-    description: "Bozzarella is your AI phone assistant, designed specifically for rural restaurants to handle orders perfectly while you focus on what matters most.",
+    title: "AI-Powered Phone Orders",
+    subtitle: "For Your Restaurant",
+    description: "Let AI handle your phone orders while your staff focuses on what matters most - creating great food and experiences.",
+    betaButton: "Join the Beta",
+    watchDemo: "Watch Demo",
     features: {
-      orderTaking: "24/7 Order Taking",
-      orderTakingDesc: "Never miss a call, even during peak hours or after closing time. Handle multiple orders simultaneously while your staff focuses on making great pizzas.",
-      smallRestaurants: "Perfect for Small Restaurants",
-      smallRestaurantsDesc: "While big chains got bigger, small restaurants were left with expensive solutions that didn't fit. We're changing that with a simple first step: AI phone ordering that works for you, at a price that makes sense.",
-      staffFreedom: "Cost Reduction",
-      staffFreedomDesc: "Save on staffing costs and reduce order errors. No more miscommunications or lost orders - just precise, consistent service every time."
+      orderTaking: "Order Taking",
+      orderTakingDesc: "AI handles phone orders accurately and efficiently",
+      smallRestaurants: "Small Restaurants",
+      smallRestaurantsDesc: "Perfect for small to medium-sized restaurants",
+      staffFreedom: "Staff Freedom",
+      staffFreedomDesc: "Free up your staff to focus on in-house customers"
+    }
+  },
+  howItWorks: {
+    title: "How It Works",
+    signUp: {
+      title: "Sign Up",
+      description: "Create an account in just a few minutes.",
     },
-    hoverText: "Hover over each feature to learn more about how Bozzarella can help your restaurant thrive.",
-    betaButton: "Join Beta Program",
-    watchDemo: "Watch Demo"
+    connect: {
+      title: "Connect Your Restaurant",
+      description: "Securely integrate your menu and ordering system.",
+    },
+    start: {
+      title: "Start Taking Orders",
+      description: "Let AI handle your phone orders while you focus on cooking.",
+    },
   },
   features: {
-    title: "Powerful Features",
-    subtitle: "Everything you need to automate your restaurant's phone orders",
-    showMore: "And much more",
-    showLess: "Show less",
+    title: "Everything You Need",
+    subtitle: "Comprehensive features to streamline your phone order operations",
+    showMore: "Show More Features",
+    showLess: "Show Less",
     items: [
       {
         key: "menuIntegration",
         title: "Menu Integration",
-        description: "Automatic menu parsing from Foodora, Wolt, or PDF formats"
+        description: "Seamlessly integrate your existing menu items and pricing"
       },
       {
         key: "phoneAvailability",
@@ -35,145 +60,106 @@ export const en: TranslationType = {
       },
       {
         key: "payments",
-        title: "Swish Payments",
-        description: "Seamless payment handling via Swish or on delivery"
+        title: "Secure Payments",
+        description: "Process payments securely over the phone"
       },
       {
         key: "notifications",
         title: "Instant Notifications",
-        description: "Orders sent via SMS, email, or direct API integration"
+        description: "Get real-time updates for new orders"
       },
       {
         key: "customization",
-        title: "Customization",
-        description: "Handle modifications and special requests with ease"
+        title: "Custom Responses",
+        description: "Tailor AI responses to match your brand voice"
       },
       {
         key: "orderHistory",
         title: "Order History",
-        description: "Remember returning customers and their preferences"
+        description: "Track and manage all phone orders in one place"
       },
       {
         key: "multilingual",
-        title: "Multilingual Support",
-        description: "Take orders in any language, making your pizzeria accessible to everyone"
+        title: "Multiple Languages",
+        description: "Handle orders in different languages"
       },
       {
         key: "humanBackup",
         title: "Human Backup",
-        description: "Seamlessly transfer calls to your staff if needed - we know sometimes you need that human touch"
+        description: "Seamless handoff to staff when needed"
       },
       {
         key: "privacy",
-        title: "Privacy First",
-        description: "Choose whether to store order history or keep things private - you're in control"
+        title: "Data Privacy",
+        description: "Secure handling of customer information"
       },
       {
         key: "delivery",
-        title: "Delivery Control",
-        description: "Toggle delivery service on/off and set delivery zones and minimum orders"
+        title: "Delivery Integration",
+        description: "Connect with your delivery service providers"
       },
       {
         key: "paymentSettings",
-        title: "Payment Settings",
-        description: "Configure pre-payment requirements and accepted payment methods"
+        title: "Payment Options",
+        description: "Flexible payment method configuration"
       },
       {
         key: "operatingHours",
         title: "Operating Hours",
-        description: "Set regular business hours and special holiday schedules"
+        description: "Set custom hours for AI order taking"
       },
       {
         key: "availability",
-        title: "Availability Management",
-        description: "Easily update status for unexpected closures, holidays, or reduced capacity"
+        title: "Availability Rules",
+        description: "Define when AI should handle calls"
       },
       {
         key: "kitchenCapacity",
-        title: "Kitchen Capacity",
-        description: "Set order limits based on kitchen capacity and current wait times"
-      }
-    ]
-  },
-  pricing: {
-    title: "Fair Pricing for Every Restaurant",
-    subtitle: "Whether you're a small family restaurant or a busy establishment, we have a plan that works for you",
-    small: {
-      title: "Small Restaurant",
-      description: "Perfect for family-run restaurants handling up to 500 phone orders monthly",
-      features: [
-        "Pay per order",
-        "No monthly minimums",
-        "All features included"
-      ]
-    },
-    medium: {
-      title: "Medium Restaurant",
-      description: "Great for established local favorites with 500-2000 monthly phone orders",
-      features: [
-        "Flexible payment options",
-        "Volume discounts",
-        "All features included"
-      ],
-      popular: "Most Popular"
-    },
-    large: {
-      title: "Large Restaurant",
-      description: "Ideal for busy establishments with 2000+ monthly phone orders",
-      features: [
-        "Custom pricing plans",
-        "Priority support",
-        "All features included"
-      ]
-    },
-    contactUs: "Contact us for pricing"
-  },
-  faq: {
-    title: "Frequently Asked Questions",
-    subtitle: "Everything you need to know about Bozzarella and how it can help your restaurant",
-    questions: [
-      {
-        question: "What are your pricing options?",
-        answer: "We haven't finalized our pricing structure yet, but we're committed to offering flexible options that work for restaurants of all sizes. This will include both fixed monthly plans and per-order pricing models, allowing you to choose what works best for your business. We understand that each restaurant has unique needs and volumes, and our pricing will reflect that flexibility."
-      },
-      {
-        question: "Is AI really suitable for my small rural pizzeria?",
-        answer: "Absolutely! Bozzarella is designed for pizzerias of all sizes, including small family-run establishments. In fact, smaller restaurants often benefit the most as AI phone ordering frees up your limited staff to focus on what matters - making great pizza. The system is easy to set up, cost-effective (you only pay per order), and helps you provide consistent service even during busy times or when you're short-staffed."
-      },
-      {
-        question: "How does Bozzarella handle complex orders?",
-        answer: "Our AI is trained to handle multi-item orders, special requests, and modifications with ease. It can clarify details with customers and ensure order accuracy through natural conversation."
-      },
-      {
-        question: "What happens if the AI doesn't understand a customer?",
-        answer: "If the AI encounters any difficulties understanding the customer, it will politely ask for clarification. In rare cases where communication becomes challenging, the call can be seamlessly transferred to your staff."
-      },
-      {
-        question: "How does Bozzarella integrate with existing POS systems?",
-        answer: "Bozzarella is designed to integrate with most major POS systems. During onboarding, we'll work with you to ensure smooth integration with your existing setup."
-      },
-      {
-        question: "Is there a contract or minimum commitment?",
-        answer: "No long-term contracts required. You can start with our flexible monthly plans and adjust or cancel as needed."
-      },
-      {
-        question: "How long does it take to set up Bozzarella?",
-        answer: "Most restaurants are up and running within 1-2 business days. This includes system integration, menu setup, and customization of the AI's responses to match your restaurant's style."
-      },
-      {
-        question: "What about data security and privacy?",
-        answer: "We take security seriously. All customer data is encrypted, and we comply with industry standards for data protection. We never share or sell customer information."
+        title: "Kitchen Management",
+        description: "Adjust order flow based on kitchen capacity"
       }
     ]
   },
   betaProgram: {
     title: "Join Our Beta Program",
-    subtitle: "Be among the first to experience Bozzarella and help shape the future of restaurant order management. Beta users get free access.",
-    button: "Get Early Access"
+    subtitle: "Be among the first to transform your restaurant's phone ordering system",
+    benefits: {
+      title: "Beta Benefits",
+      items: [
+        "Early access to features",
+        "Priority support",
+        "Reduced pricing",
+        "Shape the product"
+      ]
+    }
   },
-  betaBanner: {
-    title: "We're looking for beta testers!",
-    action: "Join our program",
-    suffix: "and get free access."
+  faq: {
+    title: "Frequently Asked Questions",
+    items: [
+      {
+        question: "How does the AI handle complex orders?",
+        answer: "Our AI is trained to handle modifications, special requests, and complex orders with ease. It confirms details with customers to ensure accuracy."
+      },
+      {
+        question: "What happens if the AI can't handle a situation?",
+        answer: "The system seamlessly transfers complex cases to your staff, ensuring no customer is left unattended."
+      },
+      {
+        question: "Is it difficult to set up?",
+        answer: "Not at all! We guide you through a simple setup process that typically takes less than an hour."
+      },
+      {
+        question: "How accurate is the AI?",
+        answer: "Our AI maintains a high accuracy rate and continuously improves through machine learning."
+      }
+    ]
+  },
+  footer: {
+    copyright: "© 2024 Restaurant AI. All rights reserved.",
+    links: {
+      privacy: "Privacy Policy",
+      terms: "Terms of Service",
+      contact: "Contact"
+    }
   }
-};
+} as const;
