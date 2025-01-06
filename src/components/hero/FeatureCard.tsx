@@ -31,7 +31,7 @@ export const FeatureCard = ({ title, description, index, isHovered, onHover }: F
       onMouseEnter={() => onHover(index)}
       onMouseLeave={() => onHover(null)}
     >
-      <div className={`transition-colors duration-300 ${isHovered ? 'text-primary' : 'text-white'}`}>
+      <div className={`flex justify-center transition-colors duration-300 ${isHovered ? 'text-primary' : 'text-white'}`}>
         {getIcon(index)}
       </div>
       <h3 className={`text-lg font-semibold mb-2 transition-colors duration-300 
