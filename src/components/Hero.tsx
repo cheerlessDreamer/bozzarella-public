@@ -22,8 +22,8 @@ export const Hero = () => {
       description: t("hero.features.orderTakingDesc"),
     },
     {
-      title: t("hero.features.zeroMistakes"),
-      description: t("hero.features.zeroMistakesDesc"),
+      title: t("hero.features.smallRestaurants"),
+      description: t("hero.features.smallRestaurantsDesc"),
     },
     {
       title: t("hero.features.staffFreedom"),
