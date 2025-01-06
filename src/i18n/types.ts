@@ -17,6 +17,26 @@ export interface TranslationType {
     betaButton: string;
     watchDemo: string;
   };
+  howItWorks: {
+    title: string;
+    steps: {
+      1: {
+        title: string;
+        description: string;
+        image: string;
+      };
+      2: {
+        title: string;
+        description: string;
+        image: string;
+      };
+      3: {
+        title: string;
+        description: string;
+        image: string;
+      };
+    };
+  };
   features: {
     title: string;
     subtitle: string;

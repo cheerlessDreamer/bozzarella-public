@@ -17,6 +17,26 @@ export const sv: TranslationType = {
     betaButton: "Gå Med i Betaprogrammet",
     watchDemo: "Se Demo"
   },
+  howItWorks: {
+    title: "Hur det fungerar",
+    steps: {
+      1: {
+        title: "Anslut din telefonlinje",
+        description: "Konfigurera Bozzarella med ditt befintliga telefonsystem på några minuter.",
+        image: "1649972904349-6e44c42644a7"
+      },
+      2: {
+        title: "Konfigurera din meny",
+        description: "Importera din meny och anpassa hur beställningar hanteras.",
+        image: "1581091226825-a6a2a5aee158"
+      },
+      3: {
+        title: "Börja ta emot beställningar",
+        description: "Låt AI hantera dina telefonbeställningar medan du fokuserar på att laga god mat.",
+        image: "1519389950473-47ba0277781c"
+      }
+    }
+  },
   features: {
     title: "Kraftfulla Funktioner",
     subtitle: "Allt du behöver för att automatisera restaurangens telefonbeställningar",

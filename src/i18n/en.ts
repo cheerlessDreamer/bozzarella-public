@@ -11,11 +11,31 @@ export const en: TranslationType = {
       smallRestaurants: "Perfect for Small Restaurants",
       smallRestaurantsDesc: "While big chains got bigger, small restaurants were left with expensive solutions that didn't fit. We're changing that with a simple first step: AI phone ordering that works for you, at a price that makes sense.",
       staffFreedom: "Cost Reduction",
-      staffFreedomDesc: "Save on staffing costs and reduce order errors. No more miscommunications or lost orders - just precise, consistent service every time."
+      staffFreedomDesc: "Save on staffing costs and reduce order errors. No more miscommunications or lost orders - just precise, consistent service every time"
     },
     hoverText: "Hover over each feature to learn more about how Bozzarella can help your restaurant thrive.",
     betaButton: "Join Beta Program",
     watchDemo: "Watch Demo"
+  },
+  howItWorks: {
+    title: "How it Works",
+    steps: {
+      1: {
+        title: "Connect Your Phone Line",
+        description: "Set up Bozzarella with your existing phone system in minutes.",
+        image: "1649972904349-6e44c42644a7"
+      },
+      2: {
+        title: "Configure Your Menu",
+        description: "Import your menu and customize how orders are handled.",
+        image: "1581091226825-a6a2a5aee158"
+      },
+      3: {
+        title: "Start Taking Orders",
+        description: "Let AI handle your phone orders while you focus on making great food.",
+        image: "1519389950473-47ba0277781c"
+      }
+    }
   },
   features: {
     title: "Powerful Features",
