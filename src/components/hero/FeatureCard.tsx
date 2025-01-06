@@ -1,3 +1,4 @@
+import { Clock, Smartphone, PiggyBank } from "lucide-react";
 import { useState } from "react";
 
 type FeatureCardProps = {
@@ -6,6 +7,19 @@ type FeatureCardProps = {
   index: number;
   isHovered: boolean;
   onHover: (index: number | null) => void;
+};
+
+const getIcon = (index: number) => {
+  switch (index) {
+    case 0:
+      return <Clock className="w-6 h-6 mb-3" />;
+    case 1:
+      return <Smartphone className="w-6 h-6 mb-3" />;
+    case 2:
+      return <PiggyBank className="w-6 h-6 mb-3" />;
+    default:
+      return null;
+  }
 };
 
 export const FeatureCard = ({ title, description, index, isHovered, onHover }: FeatureCardProps) => {
@@ -17,6 +31,9 @@ export const FeatureCard = ({ title, description, index, isHovered, onHover }: F
       onMouseEnter={() => onHover(index)}
       onMouseLeave={() => onHover(null)}
     >
+      <div className={`transition-colors duration-300 ${isHovered ? 'text-primary' : 'text-white'}`}>
+        {getIcon(index)}
+      </div>
       <h3 className={`text-lg font-semibold mb-2 transition-colors duration-300 
         ${isHovered ? 'text-primary' : 'text-white'}`}>
         {title}

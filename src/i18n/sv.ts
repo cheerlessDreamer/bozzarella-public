@@ -8,8 +8,8 @@ export const sv: TranslationType = {
     features: {
       orderTaking: "Tar Emot Beställningar 24/7",
       orderTakingDesc: "Missa aldrig ett samtal, även under rusningstid eller efter stängning. Hantera flera beställningar samtidigt medan din personal fokuserar på att laga fantastiska pizzor.",
-      zeroMistakes: "Landsbygdsförst Lösning",
-      zeroMistakesDesc: "Perfekt för landsbygdsrestauranger där leveransappar inte är tillgängliga. Ta med storstads teknologi till småstadens restauranger utan storstads kostnader.",
+      zeroMistakes: "Smart Digital Lösning",
+      zeroMistakesDesc: "Perfekt för restauranger där leveransappar inte är tillgängliga eller för dyra. Ta med företagsnivå teknologi till din restaurang utan företagskostnader.",
       staffFreedom: "Kostnadsreduktion",
       staffFreedomDesc: "Spara på personal kostnader och minska beställningsfel. Inga fler missförstånd eller förlorade beställningar - bara precis, konsekvent service varje gång."
     },
