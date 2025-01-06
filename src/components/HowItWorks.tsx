@@ -1,6 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const HowItWorks = () => {
+export const HowItWorks = () => {
   const { t } = useLanguage();
 
   return (
@@ -24,5 +24,3 @@ const HowItWorks = () => {
     </section>
   );
 };
-
-export default HowItWorks;
