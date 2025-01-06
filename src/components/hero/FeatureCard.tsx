@@ -1,4 +1,4 @@
-import { Clock, Restaurant, PiggyBank } from "lucide-react";
+import { Clock, Store, PiggyBank } from "lucide-react";
 import { useState } from "react";
 
 type FeatureCardProps = {
@@ -14,7 +14,7 @@ const getIcon = (index: number) => {
     case 0:
       return <Clock className="w-6 h-6 mb-3" />;
     case 1:
-      return <Restaurant className="w-6 h-6 mb-3" />;
+      return <Store className="w-6 h-6 mb-3" />;
     case 2:
       return <PiggyBank className="w-6 h-6 mb-3" />;
     default:
