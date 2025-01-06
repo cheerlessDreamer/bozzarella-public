@@ -133,14 +133,8 @@ export const en = {
       ]
     }
   },
-  betaBanner: {
-    title: "Beta",
-    action: "Join",
-    suffix: "now!"
-  },
   faq: {
     title: "Frequently Asked Questions",
-    subtitle: "Find answers to common questions about our service",
     items: [
       {
         question: "How does the AI handle complex orders?",
@@ -159,39 +153,6 @@ export const en = {
         answer: "Our AI maintains a high accuracy rate and continuously improves through machine learning."
       }
     ]
-  },
-  pricing: {
-    title: "Pricing",
-    subtitle: "Choose the plan that fits your needs",
-    contactUs: "Contact us for more information",
-    small: {
-      title: "Small Restaurant",
-      description: "Perfect for small restaurants",
-      features: [
-        "Up to 50 orders/month",
-        "Email support",
-        "Basic analytics"
-      ]
-    },
-    medium: {
-      title: "Medium Restaurant",
-      description: "For growing businesses",
-      features: [
-        "Up to 200 orders/month",
-        "Priority support",
-        "Advanced analytics"
-      ],
-      popular: "Most Popular"
-    },
-    large: {
-      title: "Large Restaurant",
-      description: "For established restaurants",
-      features: [
-        "Unlimited orders",
-        "24/7 support",
-        "Custom features"
-      ]
-    }
   },
   footer: {
     copyright: "© 2024 Restaurant AI. All rights reserved.",
