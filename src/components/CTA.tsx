@@ -29,29 +29,13 @@ export const CTA = () => {
             />
           </div>
           
-          {/* Right column with card image */}
+          {/* Right column with image */}
           <div className="relative">
-            <div className="w-full aspect-[1.586/1] bg-[#40E0D0] rounded-2xl shadow-lg transform rotate-1 hover:rotate-0 transition-transform duration-300">
-              <div className="absolute inset-6 flex flex-col justify-between">
-                <div className="flex justify-between items-start">
-                  <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 bg-white/20 rounded" />
-                    <span className="font-semibold">Bozzarella</span>
-                  </div>
-                  <div className="w-12 h-8 bg-white/20 rounded" />
-                </div>
-                <div className="space-y-4">
-                  <div className="w-12 h-8 bg-white/20 rounded" />
-                  <div className="space-y-2">
-                    <p className="text-dark text-sm font-medium">Beta Access</p>
-                    <p className="text-dark/60 text-sm">Early Adopter</p>
-                  </div>
-                  <div className="flex justify-end">
-                    <div className="w-16 h-8 bg-white/20 rounded" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <img 
+              src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
+              alt="Code on computer screen" 
+              className="w-full rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+            />
           </div>
         </div>
       </div>
