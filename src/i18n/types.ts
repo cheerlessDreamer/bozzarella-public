@@ -1,6 +1,6 @@
 export type Language = 'en' | 'sv';
 
-export type TranslationType = {
+export interface TranslationType {
   hero: {
     title: string;
     subtitle: string;
@@ -8,8 +8,8 @@ export type TranslationType = {
     features: {
       orderTaking: string;
       orderTakingDesc: string;
-      zeroMistakes: string;
-      zeroMistakesDesc: string;
+      smallRestaurants: string;
+      smallRestaurantsDesc: string;
       staffFreedom: string;
       staffFreedomDesc: string;
     };
@@ -22,11 +22,11 @@ export type TranslationType = {
     subtitle: string;
     showMore: string;
     showLess: string;
-    items: Array<{
+    items: {
       key: string;
       title: string;
       description: string;
-    }>;
+    }[];
   };
   pricing: {
     title: string;
@@ -52,10 +52,10 @@ export type TranslationType = {
   faq: {
     title: string;
     subtitle: string;
-    questions: Array<{
+    questions: {
       question: string;
       answer: string;
-    }>;
+    }[];
   };
   betaProgram: {
     title: string;
@@ -67,4 +67,4 @@ export type TranslationType = {
     action: string;
     suffix: string;
   };
-};
+}

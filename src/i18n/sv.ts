@@ -8,8 +8,8 @@ export const sv: TranslationType = {
     features: {
       orderTaking: "Tar Emot Beställningar 24/7",
       orderTakingDesc: "Missa aldrig ett samtal, även under rusningstid eller efter stängning. Hantera flera beställningar samtidigt medan din personal fokuserar på att laga fantastiska pizzor.",
-      zeroMistakes: "Prisvärd Digital Beställning",
-      zeroMistakesDesc: "Medan stora kedjor blev större lämnades små restauranger med dyra lösningar som inte passade. Vi ändrar på det med ett enkelt första steg: AI-telefonbeställning som fungerar för dig, till ett pris som är vettigt.",
+      smallRestaurants: "Perfekt för Små Restauranger",
+      smallRestaurantsDesc: "Medan stora kedjor blev större lämnades små restauranger med dyra lösningar som inte passade. Vi ändrar på det med ett enkelt första steg: AI-telefonbeställning som fungerar för dig, till ett pris som är vettigt.",
       staffFreedom: "Kostnadsreduktion",
       staffFreedomDesc: "Spara på personal kostnader och minska beställningsfel. Inga fler missförstånd eller förlorade beställningar - bara precis, konsekvent service varje gång."
     },
