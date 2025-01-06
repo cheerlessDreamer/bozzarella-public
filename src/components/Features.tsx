@@ -34,8 +34,9 @@ export const Features = () => {
   const additionalFeatures = allFeatures.slice(6);
 
   return (
-    <section className="py-20 bg-dark-lighter">
-      <div className="container mx-auto px-4">
+    <section className="py-20 relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-dark-lighter via-dark-lighter/50 to-dark" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">{t('features.title')}</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -47,7 +48,7 @@ export const Features = () => {
           {mainFeatures.map((feature, index) => (
             <div
               key={index}
-              className="p-6 rounded-lg bg-dark border border-gray-800 hover:border-primary/50 transition-colors"
+              className="p-6 rounded-lg bg-dark border border-gray-800 hover:border-primary/50 transition-colors backdrop-blur-sm"
             >
               <div className="text-primary mb-4">{getFeatureIcon(feature.key)}</div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
@@ -81,7 +82,7 @@ export const Features = () => {
               {additionalFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className="p-6 rounded-lg bg-dark border border-gray-800 hover:border-primary/50 transition-colors"
+                  className="p-6 rounded-lg bg-dark border border-gray-800 hover:border-primary/50 transition-colors backdrop-blur-sm"
                 >
                   <div className="text-primary mb-4">{getFeatureIcon(feature.key)}</div>
                   <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
