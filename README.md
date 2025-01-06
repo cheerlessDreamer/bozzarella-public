@@ -1,69 +1,89 @@
-# Welcome to your Lovable project
+# Bozzarella - AI Phone Orders for Restaurants
 
-## Project info
+Bozzarella is an innovative AI-powered solution that helps restaurants manage their phone orders efficiently. Our system uses advanced AI technology to handle incoming calls, take orders, and seamlessly integrate them into your existing workflow.
 
-**URL**: https://lovable.dev/projects/47ec4dba-3b56-4832-86dd-8c6f472d8312
+## Features
 
-## How can I edit this code?
+- 🤖 AI-powered phone order management
+- 📞 Natural language processing for order taking
+- 🔄 Seamless integration with existing POS systems
+- 📊 Real-time order tracking and analytics
+- 🗣️ Multi-language support
+- 🔐 Secure and reliable order processing
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/47ec4dba-3b56-4832-86dd-8c6f472d8312) and start prompting.
+Before running the project locally, ensure you have:
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js (v18 or higher) - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- npm (comes with Node.js)
+- Git
 
-**Use your preferred IDE**
+### Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+1. Clone the repository:
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
+```
 
-# Step 2: Navigate to the project directory.
+2. Navigate to the project directory:
+```sh
 cd <YOUR_PROJECT_NAME>
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. Install dependencies:
+```sh
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+4. Start the development server:
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Development
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start the development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Technology Stack
 
-## What technologies are used for this project?
+- **Frontend Framework**: React with TypeScript
+- **Build Tool**: Vite
+- **UI Components**: shadcn/ui
+- **Styling**: Tailwind CSS
+- **State Management**: React Query
+- **Routing**: React Router
+- **Form Handling**: React Hook Form
+- **Data Validation**: Zod
 
-This project is built with .
+## Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components
+├── contexts/      # React contexts
+├── hooks/         # Custom React hooks
+├── i18n/          # Internationalization
+├── lib/           # Utility functions
+└── main.tsx       # Application entry point
+```
 
-## How can I deploy this project?
+## Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/47ec4dba-3b56-4832-86dd-8c6f472d8312) and click on Share -> Publish.
+We welcome contributions! Please feel free to submit a Pull Request.
 
-## I want to use a custom domain - is that possible?
+## Support
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+For support, please email support@bozzarella.com or join our [Discord community](https://discord.gg/bozzarella).
+
+## License
+
+© 2024 Bozzarella. All rights reserved.
