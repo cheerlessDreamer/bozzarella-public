@@ -12,7 +12,7 @@ export const CTA = () => {
           {/* Left column with text and button */}
           <div className="space-y-6">
             <h2 className="text-5xl font-bold leading-tight">
-              Join Our Beta Program Today
+              {t('betaProgram.title')}
             </h2>
             <p className="text-gray-400 text-lg">
               {t('betaProgram.subtitle')}
