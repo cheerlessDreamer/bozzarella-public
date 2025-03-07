@@ -9,7 +9,7 @@ import Index from "./pages/Index";
 const queryClient = new QueryClient();
 
 // Get the base URL from the environment or use a default
-const basename = import.meta.env.BASE_URL || '/';
+const basename = '';
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
