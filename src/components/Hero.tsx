@@ -104,7 +104,11 @@ export const Hero = () => {
             </Button>
           </div>
 
-          <div id="demo-video" className="mt-16 max-w-4xl mx-auto bg-dark-lighter rounded-lg overflow-hidden">
+          <div id="demo-video" className="mt-16 max-w-4xl mx-auto">
+            <div className="aspect-video w-full border border-gray-600 rounded-lg flex items-center justify-center">
+              <p className="text-xl text-gray-400 font-medium">🚧 Demo video coming soon 🚧</p>
+            </div>
+            {/* Original video embed
             <div className="aspect-video w-full">
               <iframe
                 className="w-full h-full"
@@ -113,6 +117,7 @@ export const Hero = () => {
                 allowFullScreen
               />
             </div>
+            */}
           </div>
         </div>
       </div>

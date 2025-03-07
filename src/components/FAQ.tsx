@@ -22,12 +22,12 @@ export const FAQ = () => {
           {/* Left column with title and support button */}
           <div className="space-y-6">
             <h2 className="text-4xl font-bold">{t('faq.title')}</h2>
-            <Button 
+            {/* <Button 
               variant="outline" 
               className="bg-transparent text-white border-white/20 hover:bg-white/10"
             >
               Contact Support
-            </Button>
+            </Button> */}
           </div>
 
           {/* Right column with accordion */}

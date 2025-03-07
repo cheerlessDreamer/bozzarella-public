@@ -7,7 +7,7 @@ export const Footer = () => {
             © 2024 Bozzarella. All rights reserved.
           </div>
           <div className="flex flex-col md:flex-row items-center gap-2 text-sm text-gray-400">
-            <span>Made with ❤️ in Sweden</span>
+            <span>Proudly made in the Arctic Circle 🇸🇪</span>
             <span className="hidden md:inline">•</span>
             <span>Website by DTID</span>
           </div>
