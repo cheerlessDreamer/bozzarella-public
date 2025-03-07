@@ -14,11 +14,11 @@ export const LanguageSwitcher = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="text-gray-400 hover:text-white">
+        <Button variant="ghost" size="icon" className="text-gray-400 hover:text-white relative z-50">
           <Globe className="h-5 w-5" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="bg-dark-lighter border-gray-800">
+      <DropdownMenuContent align="end" className="bg-dark-lighter border-gray-800 z-50">
         <DropdownMenuItem 
           onClick={() => setLanguage('en')}
           className={`${language === 'en' ? 'text-primary' : 'text-gray-400'} hover:text-white cursor-pointer`}

@@ -31,12 +31,15 @@ export const Hero = () => {
     }
   ];
 
+  // Use relative path for the hero image that works with GitHub Pages
+  const heroImagePath = "./hero.png";
+
   return (
     <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-bottom w-full"
         style={{
-          backgroundImage: 'url("/hero.png")',
+          backgroundImage: `url("${heroImagePath}")`,
           maxWidth: '1920px',
           margin: '0 auto',
           left: '0',
@@ -47,7 +50,7 @@ export const Hero = () => {
         <div className="absolute inset-0 hero-gradient" />
       </div>
 
-      <div className="absolute top-4 right-4">
+      <div className="absolute top-4 right-4 z-50">
         <LanguageSwitcher />
       </div>
 
