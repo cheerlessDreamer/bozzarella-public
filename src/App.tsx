@@ -8,13 +8,16 @@ import Index from "./pages/Index";
 
 const queryClient = new QueryClient();
 
+// Get the base URL from the environment or use a default
+const basename = import.meta.env.BASE_URL || '/';
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <LanguageProvider>
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename={basename}>
           <Routes>
             <Route path="/" element={<Index />} />
           </Routes>
