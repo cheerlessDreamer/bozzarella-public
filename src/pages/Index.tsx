@@ -10,8 +10,6 @@ import { CTA } from "@/components/CTA";
 const Index = () => {
   return (
     <div className="min-h-screen bg-dark text-white">
-      <h1 className="text-3xl font-bold">Bozzarella - AI Phone Orders</h1>
-      <p>Your content here</p>
       <BetaBanner />
       <Hero />
       <HowItWorks />
